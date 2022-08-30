@@ -17,6 +17,7 @@ export interface D1Options {
 const D1_BETA_PREFIX = `__D1_BETA__`;
 
 export class D1Plugin extends Plugin<D1Options> implements D1Options {
+  #cachedDatabases: { [key: string]: D1Database } = {};
   @Option({
     type: OptionType.ARRAY,
     name: "d1",
@@ -46,7 +47,11 @@ export class D1Plugin extends Plugin<D1Options> implements D1Options {
     storage: StorageFactory,
     dbName: string
   ): Promise<D1Database> {
-    return new D1Database(await storage.storage(dbName, this.#persist));
+    if (this.#cachedDatabases[dbName]) return this.#cachedDatabases[dbName];
+    this.#cachedDatabases[dbName] = new D1Database(
+      await storage.storage(dbName, this.#persist)
+    );
+    return this.#cachedDatabases[dbName];
   }
 
   async setup(storageFactory: StorageFactory): Promise<SetupResult> {
