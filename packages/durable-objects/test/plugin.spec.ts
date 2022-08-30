@@ -1,27 +1,27 @@
 import path from "path";
 import { setImmediate } from "timers/promises";
-import { Response } from "@miniflare/core";
+import { Response } from "@d1testflare/core";
 import {
   DurableObject,
   DurableObjectError,
   DurableObjectNamespace,
   DurableObjectState,
   DurableObjectsPlugin,
-} from "@miniflare/durable-objects";
+} from "@d1testflare/durable-objects";
 import {
   Compatibility,
   Mount,
   NoOpLog,
   PluginContext,
   StoredValue,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 import { TestObject, testId } from "./object";
 

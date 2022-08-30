@@ -1,6 +1,6 @@
 import assert from "assert";
 import { setTimeout } from "timers/promises";
-import { RequestContext } from "@miniflare/shared";
+import { RequestContext } from "@d1testflare/shared";
 import { ExecutionContext } from "ava";
 
 export function noop(): void {}

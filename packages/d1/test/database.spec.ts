@@ -1,7 +1,7 @@
-import { D1Database } from "@miniflare/d1";
-import { Storage } from "@miniflare/shared";
-import { testClock } from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { D1Database } from "@d1testflare/d1";
+import { Storage } from "@d1testflare/shared";
+import { testClock } from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import anyTest, { TestInterface } from "ava";
 
 interface Context {

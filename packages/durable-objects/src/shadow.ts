@@ -7,8 +7,8 @@ import {
   StoredValue,
   addAll,
   lexicographicCompare,
-} from "@miniflare/shared";
-import { listFilterMatch } from "@miniflare/storage-memory";
+} from "@d1testflare/shared";
+import { listFilterMatch } from "@d1testflare/storage-memory";
 import { ALARM_KEY } from "./alarms";
 
 export class ShadowStorage extends Storage {

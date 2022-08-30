@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-import { Log, numericCompare } from "@miniflare/shared";
+import { Log, numericCompare } from "@d1testflare/shared";
 import semiver from "semiver";
 import { fetch } from "undici";
 

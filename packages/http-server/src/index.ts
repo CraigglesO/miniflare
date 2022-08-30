@@ -17,9 +17,9 @@ import {
   _getBodyLength,
   _headersFromIncomingRequest,
   logResponse,
-} from "@miniflare/core";
-import { Log, prefixError, randomHex } from "@miniflare/shared";
-import { coupleWebSocket } from "@miniflare/web-sockets";
+} from "@d1testflare/core";
+import { Log, prefixError, randomHex } from "@d1testflare/shared";
+import { coupleWebSocket } from "@d1testflare/web-sockets";
 import { BodyInit, Headers } from "undici";
 import { getAccessibleHosts } from "./helpers";
 import { HTTPPlugin, RequestMeta } from "./plugin";
@@ -157,7 +157,7 @@ async function writeResponse(
     if (key === "set-cookie") {
       // Multiple Set-Cookie headers should be treated as separate headers
       // @ts-expect-error getAll is added to the Headers prototype by
-      // importing @miniflare/core
+      // importing @d1testflare/core
       headers["set-cookie"] = response.headers.getAll("set-cookie");
     } else {
       headers[key] = value;

@@ -1,4 +1,4 @@
-# `@miniflare/core`
+# `@d1testflare/core`
 
 Core module for [Miniflare](https://github.com/cloudflare/miniflare): a fun,
 full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,11 +7,11 @@ full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { CorePlugin, MiniflareCore } from "@miniflare/core";
-import { KVPlugin } from "@miniflare/kv";
-import { VMScriptRunner } from "@miniflare/runner-vm";
-import { Log, LogLevel } from "@miniflare/shared";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { CorePlugin, MiniflareCore } from "@d1testflare/core";
+import { KVPlugin } from "@d1testflare/kv";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
+import { Log, LogLevel } from "@d1testflare/shared";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 
 export class StorageFactory {
   storages = new Map();

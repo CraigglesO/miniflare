@@ -2,13 +2,13 @@ import { existsSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
 import { promisify } from "util";
-import { BindingsPlugin, BuildError, BuildPlugin } from "@miniflare/core";
+import { BindingsPlugin, BuildError, BuildPlugin } from "@d1testflare/core";
 import {
   Compatibility,
   LogLevel,
   NoOpLog,
   PluginContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TestLog,
   logPluginOptions,
@@ -16,7 +16,7 @@ import {
   parsePluginWranglerConfig,
   useMiniflare,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 import rimraf from "rimraf";
 import which from "which";

@@ -6,14 +6,14 @@ import {
   CacheStorage,
   CachedMeta,
   NoOpCache,
-} from "@miniflare/cache";
+} from "@d1testflare/cache";
 import {
   Compatibility,
   LogLevel,
   NoOpLog,
   PluginContext,
   StoredValueMeta,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   TestLog,
@@ -23,7 +23,7 @@ import {
   parsePluginWranglerConfig,
   useTmp,
   utf8Decode,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 import { File, FormData } from "undici";
 import { testResponse } from "./helpers";

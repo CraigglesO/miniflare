@@ -1,13 +1,13 @@
 import { URL } from "url";
-import { Request, Response } from "@miniflare/core";
+import { Request, Response } from "@d1testflare/core";
 import {
   AlarmStore,
   DurableObject,
   DurableObjectId,
   DurableObjectState,
-} from "@miniflare/durable-objects";
-import { Context } from "@miniflare/shared";
-import { MemoryStorageFactory } from "@miniflare/shared-test";
+} from "@d1testflare/durable-objects";
+import { Context } from "@d1testflare/shared";
+import { MemoryStorageFactory } from "@d1testflare/shared-test";
 
 export const testIdHex = // ID with name "test" for object with name "TEST"
   "a856dbbd5109f5217920084de35ee0a24072ca790341ed4e94ee059335e587e5";

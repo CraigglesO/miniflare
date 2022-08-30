@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { StoredValueMeta, sanitisePath } from "@miniflare/shared";
+import { StoredValueMeta, sanitisePath } from "@d1testflare/shared";
 import {
   TestStorageFactory,
   storageMacros,
@@ -8,8 +8,8 @@ import {
   useTmp,
   utf8Decode,
   utf8Encode,
-} from "@miniflare/shared-test";
-import { FileStorage, FileStorageError } from "@miniflare/storage-file";
+} from "@d1testflare/shared-test";
+import { FileStorage, FileStorageError } from "@d1testflare/storage-file";
 import test, { ExecutionContext } from "ava";
 
 class FileStorageFactory extends TestStorageFactory {

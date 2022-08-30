@@ -1,5 +1,5 @@
 {
-  "name": "@miniflare/cache",
+  "name": "@d1testflare/cache",
   "version": "2.7.1",
   "description": "Cache module for Miniflare: a fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -35,14 +35,14 @@
     "extends": "../../package.json"
   },
   "dependencies": {
-    "@miniflare/core": "2.7.1",
-    "@miniflare/shared": "2.7.1",
+    "@d1testflare/core": "2.7.1",
+    "@d1testflare/shared": "2.7.1",
     "http-cache-semantics": "^4.1.0",
     "undici": "5.9.1"
   },
   "devDependencies": {
-    "@miniflare/shared-test": "2.7.1",
-    "@miniflare/web-sockets": "2.7.1",
+    "@d1testflare/shared-test": "2.7.1",
+    "@d1testflare/web-sockets": "2.7.1",
     "@types/http-cache-semantics": "^4.0.1"
   }
 }

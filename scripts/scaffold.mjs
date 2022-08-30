@@ -58,7 +58,7 @@ async function scaffoldPackage(unscopedPkgName) {
 
   await fs.writeFile(
     path.join(pkgRoot, "README.md"),
-    `# \`@miniflare/${unscopedPkgName}\`\n`,
+    `# \`@d1testflare/${unscopedPkgName}\`\n`,
     "utf8"
   );
   await fs.writeFile(path.join(srcRoot, "index.ts"), "export {};\n", "utf8");

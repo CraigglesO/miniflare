@@ -8,7 +8,7 @@ import {
   runWithInputGateClosed,
   viewToArray,
   waitUntilOnOutputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   ALARM_KEY,
   DurableObjectGetAlarmOptions,

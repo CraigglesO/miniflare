@@ -1,6 +1,6 @@
 import assert from "assert";
-import { Storage, StorageFactory, StoredValueMeta } from "@miniflare/shared";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { Storage, StorageFactory, StoredValueMeta } from "@d1testflare/shared";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 
 export class StackedMemoryStorage extends MemoryStorage {
   private readonly stack: Map<string, StoredValueMeta>[] = [];
@@ -23,7 +23,7 @@ export class StackedMemoryStorageFactory implements StorageFactory {
   private readonly storages = new Map<string, StackedMemoryStorage>();
 
   storage(namespace: string, persist?: boolean | string): Storage {
-    // @miniflare/jest-environment-miniflare doesn't support persistent storage
+    // @d1testflare/jest-environment-miniflare doesn't support persistent storage
     assert(!persist);
     let storage = this.storages.get(namespace);
     if (storage) return storage;

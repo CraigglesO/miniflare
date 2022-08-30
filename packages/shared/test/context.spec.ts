@@ -3,7 +3,7 @@ import {
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
   RequestContext,
   getRequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import test, { ThrowsExpectation } from "ava";
 
 test("RequestContext: depths default to 1", (t) => {

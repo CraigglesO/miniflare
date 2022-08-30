@@ -6,7 +6,7 @@ import {
   ScriptBlueprint,
   ScriptRunner,
   ScriptRunnerResult,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { VMScriptRunnerError } from "./error";
 import { defineHasInstances } from "./instanceof";
 import { ModuleLinker } from "./linker";

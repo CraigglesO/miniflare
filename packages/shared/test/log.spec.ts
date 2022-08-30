@@ -1,5 +1,5 @@
-import { Log, LogLevel } from "@miniflare/shared";
-import { interceptConsoleLogs } from "@miniflare/shared-test";
+import { Log, LogLevel } from "@d1testflare/shared";
+import { interceptConsoleLogs } from "@d1testflare/shared-test";
 import test from "ava";
 
 test.serial("Log: logs at all levels", (t) => {

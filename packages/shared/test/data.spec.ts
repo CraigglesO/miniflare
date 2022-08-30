@@ -14,8 +14,8 @@ import {
   titleCase,
   viewToArray,
   viewToBuffer,
-} from "@miniflare/shared";
-import { useTmp } from "@miniflare/shared-test";
+} from "@d1testflare/shared";
+import { useTmp } from "@d1testflare/shared-test";
 import test from "ava";
 
 test("lexicographicCompare: compares lexicographically", (t) => {

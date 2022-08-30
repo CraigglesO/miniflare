@@ -1,4 +1,4 @@
-import { Navigator } from "@miniflare/core";
+import { Navigator } from "@d1testflare/core";
 import test from "ava";
 
 test("Navigator: userAgent is Cloudflare-Workers", (t) => {

@@ -6,7 +6,7 @@ import {
   base64Encode,
   lexicographicCompare,
   nonCircularClone,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 
 export function cloneMetadata<Meta>(metadata?: unknown): Meta | undefined {
   return (metadata && nonCircularClone(metadata)) as Meta | undefined;

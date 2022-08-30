@@ -63,7 +63,7 @@ current time and the empty string respectively. It will return a promise which
 resolves to an array containing data returned by all waited promises:
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `

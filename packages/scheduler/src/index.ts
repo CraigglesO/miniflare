@@ -3,7 +3,7 @@ import {
   MiniflareCore,
   ReloadEvent,
   logResponse,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import type { Cron, ITimerHandle } from "cron-schedule";
 import { SchedulerPlugin } from "./plugin";
 

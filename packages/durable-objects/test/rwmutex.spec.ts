@@ -1,8 +1,8 @@
 // noinspection ES6MissingAwait
 
 import { setTimeout } from "timers/promises";
-import { ReadWriteMutex } from "@miniflare/durable-objects";
-import { triggerPromise } from "@miniflare/shared-test";
+import { ReadWriteMutex } from "@d1testflare/durable-objects";
+import { triggerPromise } from "@d1testflare/shared-test";
 import test from "ava";
 
 test("ReadWriteMutex: runs read closures concurrently", async (t) => {

@@ -1,6 +1,6 @@
 import assert from "assert";
-import { Storage, StorageFactory, StoredValueMeta } from "@miniflare/shared";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { Storage, StorageFactory, StoredValueMeta } from "@d1testflare/shared";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 
 export class MemoryStorageFactory implements StorageFactory {
   readonly storages = new Map<string, MemoryStorage>();

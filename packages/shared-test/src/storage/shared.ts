@@ -4,7 +4,7 @@ import {
   StoredKey,
   StoredValueMeta,
   millisToSeconds,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { ExecutionContext } from "ava";
 import { isWithin } from "../asserts";
 import { utf8Encode } from "../data";

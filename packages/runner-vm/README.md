@@ -1,4 +1,4 @@
-# `@miniflare/runner-vm`
+# `@d1testflare/runner-vm`
 
 VM script runner module for
 [Miniflare](https://github.com/cloudflare/miniflare): a fun, full-featured,
@@ -7,7 +7,7 @@ fully-local simulator for Cloudflare Workers.
 ## Example
 
 ```js
-import { VMScriptRunner } from "@miniflare/runner-vm";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
 
 const runner = new VMScriptRunner();
 // Pass `console` into sandbox

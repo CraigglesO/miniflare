@@ -1,4 +1,4 @@
-# `@miniflare/http-server`
+# `@d1testflare/http-server`
 
 HTTP server module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,16 +7,16 @@ fun, full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { CorePlugin, MiniflareCore } from "@miniflare/core";
+import { CorePlugin, MiniflareCore } from "@d1testflare/core";
 import {
   HTTPPlugin,
   convertNodeRequest,
   createServer,
   startServer,
-} from "@miniflare/http-server";
-import { VMScriptRunner } from "@miniflare/runner-vm";
-import { Log, LogLevel } from "@miniflare/shared";
-import { MemoryStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/http-server";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
+import { Log, LogLevel } from "@d1testflare/shared";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import http from "http";
 
 // Converting Node.js http.IncomingMessage to Miniflare's Request

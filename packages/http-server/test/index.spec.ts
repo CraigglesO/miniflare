@@ -9,7 +9,7 @@ import { ReadableStreamDefaultController, TransformStream } from "stream/web";
 import { setTimeout } from "timers/promises";
 import { URL } from "url";
 import zlib from "zlib";
-import { CachePlugin } from "@miniflare/cache";
+import { CachePlugin } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   IncomingRequestCfProperties,
@@ -18,16 +18,16 @@ import {
   _isByteStream,
   _kInner,
   fetch,
-} from "@miniflare/core";
-import { DurableObjectsPlugin } from "@miniflare/durable-objects";
+} from "@d1testflare/core";
+import { DurableObjectsPlugin } from "@d1testflare/durable-objects";
 import {
   HTTPPlugin,
   RequestMeta,
   convertNodeRequest,
   createRequestListener,
   createServer,
-} from "@miniflare/http-server";
-import { LogLevel, getRequestContext } from "@miniflare/shared";
+} from "@d1testflare/http-server";
+import { LogLevel, getRequestContext } from "@d1testflare/shared";
 import {
   TestLog,
   isWithin,
@@ -37,8 +37,8 @@ import {
   useServer,
   useTmp,
   utf8Encode,
-} from "@miniflare/shared-test";
-import { MessageEvent, WebSocketPlugin } from "@miniflare/web-sockets";
+} from "@d1testflare/shared-test";
+import { MessageEvent, WebSocketPlugin } from "@d1testflare/web-sockets";
 import test, { ExecutionContext, Macro } from "ava";
 import StandardWebSocket, {
   Data,

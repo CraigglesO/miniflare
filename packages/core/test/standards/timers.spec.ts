@@ -1,10 +1,10 @@
 import { setTimeout as setTimeoutPromises } from "timers/promises";
-import { DOMException, Scheduler, createTimer } from "@miniflare/core";
+import { DOMException, Scheduler, createTimer } from "@d1testflare/core";
 import {
   TestInputGate,
   triggerPromise,
   waitsForInputGate,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const inputGatedSetTimeout = createTimer(setTimeout);

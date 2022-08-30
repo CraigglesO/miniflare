@@ -11,7 +11,7 @@ import {
   StorageFactory,
   resolveStoragePersist,
   usageModelExternalSubrequestLimit,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { AlarmStore } from "./alarms";
 import { DurableObjectError } from "./error";
 import {

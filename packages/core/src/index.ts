@@ -27,8 +27,8 @@ import {
   logOptions,
   resolveStoragePersist,
   usageModelExternalSubrequestLimit,
-} from "@miniflare/shared";
-import type { Watcher } from "@miniflare/watcher";
+} from "@d1testflare/shared";
+import type { Watcher } from "@d1testflare/watcher";
 import { dequal } from "dequal/lite";
 import { dim } from "kleur/colors";
 import { MockAgent } from "undici";
@@ -861,7 +861,7 @@ export class MiniflareCore<
       if (!watcher) {
         const {
           Watcher,
-        }: typeof import("@miniflare/watcher") = require("@miniflare/watcher");
+        }: typeof import("@d1testflare/watcher") = require("@d1testflare/watcher");
         this.#watcherCallbackMutex = new Mutex();
         watcher = new Watcher(this.#watcherCallback.bind(this));
         this.#watcher = watcher;

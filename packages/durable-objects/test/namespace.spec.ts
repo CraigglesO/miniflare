@@ -1,7 +1,7 @@
 import assert from "assert";
 import { URL } from "url";
 import { deserialize } from "v8";
-import { CachePlugin } from "@miniflare/cache";
+import { CachePlugin } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   CorePlugin,
@@ -9,7 +9,7 @@ import {
   Request,
   Response,
   fetch,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import {
   DurableObject,
   DurableObjectError,
@@ -19,8 +19,8 @@ import {
   DurableObjectStorage,
   DurableObjectStub,
   DurableObjectsPlugin,
-} from "@miniflare/durable-objects";
-import { VMScriptRunner } from "@miniflare/runner-vm";
+} from "@d1testflare/durable-objects";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
 import {
   Compatibility,
   LogLevel,
@@ -28,7 +28,7 @@ import {
   PluginContext,
   StorageFactory,
   getRequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   RecorderStorage,
@@ -38,9 +38,9 @@ import {
   triggerPromise,
   useMiniflare,
   useServer,
-} from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
-import { WebSocketPair } from "@miniflare/web-sockets";
+} from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
+import { WebSocketPair } from "@d1testflare/web-sockets";
 import test, { ThrowsExpectation } from "ava";
 import { Request as BaseRequest } from "undici";
 import { TestObject, alarmStore, testId, testIdHex, testKey } from "./object";

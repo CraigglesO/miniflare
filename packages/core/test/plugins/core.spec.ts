@@ -3,14 +3,14 @@ import fs from "fs/promises";
 import path from "path";
 import { text } from "stream/consumers";
 import type { CompressionStream, DecompressionStream } from "stream/web";
-import { CorePlugin, Request, Response, Scheduler } from "@miniflare/core";
+import { CorePlugin, Request, Response, Scheduler } from "@d1testflare/core";
 import {
   Compatibility,
   NoOpLog,
   PluginContext,
   RequestContext,
   STRING_SCRIPT_PATH,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   logPluginOptions,
   parsePluginArgv,
@@ -18,7 +18,7 @@ import {
   useServer,
   useTmp,
   utf8Encode,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test, { ThrowsExpectation } from "ava";
 import { File, FormData } from "undici";
 

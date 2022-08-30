@@ -9,7 +9,7 @@ import {
   _urlFromRequestInput,
   withImmutableHeaders,
   withInputGating,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import {
   Awaitable,
   Context,
@@ -19,7 +19,7 @@ import {
   RequestContext,
   getRequestContext,
   usageModelExternalSubrequestLimit,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { Response as BaseResponse } from "undici";
 import { DurableObjectError } from "./error";
 import { DurableObjectStorage } from "./storage";

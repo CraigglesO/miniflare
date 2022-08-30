@@ -1,7 +1,7 @@
 import { Blob } from "buffer";
 import { ReadableStream, TextDecoderStream, TransformStream } from "stream/web";
 import { TextEncoder } from "util";
-import { getObjectProperties, utf8Encode } from "@miniflare/shared-test";
+import { getObjectProperties, utf8Encode } from "@d1testflare/shared-test";
 import test from "ava";
 import { Headers } from "undici";
 import { Response } from "undici";

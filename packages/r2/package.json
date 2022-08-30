@@ -1,5 +1,5 @@
 {
-  "name": "@miniflare/r2",
+  "name": "@d1testflare/r2",
   "version": "2.7.1",
   "description": "Workers R2 module for Miniflare: a fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -35,10 +35,10 @@
     "extends": "../../package.json"
   },
   "dependencies": {
-    "@miniflare/shared": "2.7.1",
+    "@d1testflare/shared": "2.7.1",
     "undici": "5.9.1"
   },
   "devDependencies": {
-    "@miniflare/shared-test": "2.7.1"
+    "@d1testflare/shared-test": "2.7.1"
   }
 }

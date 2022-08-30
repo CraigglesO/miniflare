@@ -1,4 +1,4 @@
-import { OptionMetadata, OptionType, kebabCase } from "@miniflare/shared";
+import { OptionMetadata, OptionType, kebabCase } from "@d1testflare/shared";
 
 export function argName(key: string, { name, type }: OptionMetadata): string {
   name ??= kebabCase(key);

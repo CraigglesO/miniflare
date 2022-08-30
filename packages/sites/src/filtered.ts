@@ -9,8 +9,8 @@ import {
   KVPutValueType,
   KVValue,
   KVValueMeta,
-} from "@miniflare/kv";
-import { Matcher, Storage } from "@miniflare/shared";
+} from "@d1testflare/kv";
+import { Matcher, Storage } from "@d1testflare/shared";
 
 export interface FilteredKVStorageNamespaceOptions {
   readOnly?: boolean;

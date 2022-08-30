@@ -76,7 +76,7 @@ Redis support is not included by default. You must install an optional peer
 dependency:
 
 ```sh
-$ npm install -D @miniflare/storage-redis
+$ npm install -D @d1testflare/storage-redis
 ```
 
 </Aside>
@@ -90,7 +90,7 @@ can do this with the `getCaches` method:
 ---
 highlight: [23,24,25,26,27,28,29,30,31,32]
 ---
-import { Miniflare, Response } from "miniflare";
+import { Miniflare, Response } from "d1testflare";
 
 const mf = new Miniflare({
   modules: true,

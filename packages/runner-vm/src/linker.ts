@@ -9,7 +9,7 @@ import {
   ProcessedModuleRule,
   STRING_SCRIPT_PATH,
   viewToBuffer,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { VMScriptRunnerError } from "./error";
 
 const SUGGEST_BUNDLE =

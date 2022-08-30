@@ -1,5 +1,5 @@
 import path from "path";
-import { Awaitable, Storage, StorageFactory } from "@miniflare/shared";
+import { Awaitable, Storage, StorageFactory } from "@d1testflare/shared";
 
 export class PluginStorageFactory implements StorageFactory {
   private readonly pluginName: string;

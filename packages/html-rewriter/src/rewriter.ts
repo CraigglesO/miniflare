@@ -1,5 +1,5 @@
 import { ReadableStream, TransformStream } from "stream/web";
-import { Response } from "@miniflare/core";
+import { Response } from "@d1testflare/core";
 import type {
   HTMLRewriter as BaseHTMLRewriter,
   DocumentHandlers,
@@ -68,7 +68,7 @@ export class HTMLRewriter {
       },
       // The finally() below will ensure the rewriter is always freed.
       // chunk is guaranteed to be a Uint8Array as we're using the
-      // @miniflare/core Response class, which transforms to a byte stream.
+      // @d1testflare/core Response class, which transforms to a byte stream.
       transform: (chunk) => rewriter.write(chunk),
       flush: () => rewriter.end(),
     });

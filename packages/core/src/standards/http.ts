@@ -19,8 +19,8 @@ import {
   nonCircularClone,
   waitForOpenInputGate,
   waitForOpenOutputGate,
-} from "@miniflare/shared";
-import type { WebSocket } from "@miniflare/web-sockets";
+} from "@d1testflare/shared";
+import type { WebSocket } from "@d1testflare/web-sockets";
 import { Colorize, blue, bold, green, grey, red, yellow } from "kleur/colors";
 import { splitCookiesString } from "set-cookie-parser";
 import {

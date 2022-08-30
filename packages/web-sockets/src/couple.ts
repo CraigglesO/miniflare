@@ -1,4 +1,4 @@
-import { viewToBuffer } from "@miniflare/shared";
+import { viewToBuffer } from "@d1testflare/shared";
 import StandardWebSocket from "ws";
 import {
   ErrorEvent,

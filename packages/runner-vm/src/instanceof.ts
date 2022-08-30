@@ -74,7 +74,7 @@
 // globals, and they'll override the inner realm's ones.
 
 import vm from "vm";
-import { ValueOf } from "@miniflare/shared";
+import { ValueOf } from "@d1testflare/shared";
 
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstance
 function ordinaryHasInstance(C: unknown, O: unknown): boolean {

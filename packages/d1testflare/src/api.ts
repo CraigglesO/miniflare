@@ -1,38 +1,38 @@
 import http from "http";
 import https from "https";
-import { CachePlugin, CacheStorage } from "@miniflare/cache";
+import { CachePlugin, CacheStorage } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   BuildPlugin,
   CorePlugin,
   MiniflareCore,
   MiniflareCoreOptions,
-} from "@miniflare/core";
-import { D1Database, D1Plugin } from "@miniflare/d1";
+} from "@d1testflare/core";
+import { D1Database, D1Plugin } from "@d1testflare/d1";
 import {
   DurableObjectId,
   DurableObjectNamespace,
   DurableObjectStorage,
   DurableObjectsPlugin,
-} from "@miniflare/durable-objects";
-import { HTMLRewriterPlugin } from "@miniflare/html-rewriter";
+} from "@d1testflare/durable-objects";
+import { HTMLRewriterPlugin } from "@d1testflare/html-rewriter";
 import {
   DEFAULT_PORT,
   HTTPPlugin,
   createServer,
   startServer,
-} from "@miniflare/http-server";
-import { KVNamespace, KVPlugin } from "@miniflare/kv";
-import { R2Bucket, R2Plugin } from "@miniflare/r2";
-import { VMScriptRunner } from "@miniflare/runner-vm";
+} from "@d1testflare/http-server";
+import { KVNamespace, KVPlugin } from "@d1testflare/kv";
+import { R2Bucket, R2Plugin } from "@d1testflare/r2";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
 import {
   CronScheduler,
   SchedulerPlugin,
   startScheduler,
-} from "@miniflare/scheduler";
-import { Log, NoOpLog } from "@miniflare/shared";
-import { SitesPlugin } from "@miniflare/sites";
-import { WebSocketPlugin } from "@miniflare/web-sockets";
+} from "@d1testflare/scheduler";
+import { Log, NoOpLog } from "@d1testflare/shared";
+import { SitesPlugin } from "@d1testflare/sites";
+import { WebSocketPlugin } from "@d1testflare/web-sockets";
 import sourceMap from "source-map-support";
 import { startREPL } from "./repl";
 import { VariedStorageFactory } from "./storage";

@@ -1,4 +1,4 @@
-# `@miniflare/web-sockets`
+# `@d1testflare/web-sockets`
 
 WebSocket module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers. See
@@ -8,7 +8,7 @@ fun, full-featured, fully-local simulator for Cloudflare Workers. See
 
 ```js
 import StandardWebSocket from "ws";
-import { WebSocketPair, coupleWebSocket } from "@miniflare/web-sockets";
+import { WebSocketPair, coupleWebSocket } from "@d1testflare/web-sockets";
 
 const [webSocket1, webSocket2] = Object.values(new WebSocketPair());
 

@@ -54,8 +54,8 @@ global `getMiniflareFetchMock()` function to obtain a correctly set-up
 [`MockAgent`](https://undici.nodejs.org/#/docs/api/MockAgent?id=mockagentgetorigin).
 
 ```js
-import { Miniflare } from "miniflare";
-import { createFetchMock } from "@miniflare/core";
+import { Miniflare } from "d1testflare";
+import { createFetchMock } from "@d1testflare/core";
 
 // Create `MockAgent` and connect it to the `Miniflare` instance
 const fetchMock = createFetchMock();
@@ -209,7 +209,7 @@ Primitive `constructor` and `prototype` checks cannot be trapped easily and so
 will fail for values created outside the Miniflare sandbox.
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   bindings: {

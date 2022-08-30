@@ -11,7 +11,7 @@ import {
   viewToArray,
   waitForOpenInputGate,
   waitForOpenOutputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { Headers } from "undici";
 import {
   R2Object,

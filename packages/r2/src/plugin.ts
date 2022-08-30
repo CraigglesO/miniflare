@@ -7,7 +7,7 @@ import {
   SetupResult,
   StorageFactory,
   resolveStoragePersist,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { R2Bucket } from "./bucket";
 
 export interface R2Options {

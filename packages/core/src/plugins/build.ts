@@ -10,7 +10,7 @@ import {
   Plugin,
   PluginContext,
   WranglerConfig,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 
 export class BuildError extends MiniflareError<number> {}
 

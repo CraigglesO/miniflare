@@ -1,5 +1,5 @@
 import vm from "vm";
-import { defineHasInstances } from "@miniflare/runner-vm";
+import { defineHasInstances } from "@d1testflare/runner-vm";
 import test, { Macro } from "ava";
 
 const instanceOfMacro: Macro<

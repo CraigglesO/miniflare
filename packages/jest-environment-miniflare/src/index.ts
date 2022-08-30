@@ -1,4 +1,23 @@
 import vm from "vm";
+import { CachePlugin } from "@d1testflare/cache";
+import {
+  BindingsPlugin,
+  CorePlugin,
+  MiniflareCore,
+  createFetchMock,
+} from "@d1testflare/core";
+import {
+  DurableObjectId,
+  DurableObjectStorage,
+  DurableObjectsPlugin,
+} from "@d1testflare/durable-objects";
+import { HTMLRewriterPlugin } from "@d1testflare/html-rewriter";
+import { KVPlugin } from "@d1testflare/kv";
+import { R2Plugin } from "@d1testflare/r2";
+import { VMScriptRunner, defineHasInstances } from "@d1testflare/runner-vm";
+import { Context, NoOpLog } from "@d1testflare/shared";
+import { SitesPlugin } from "@d1testflare/sites";
+import { WebSocketPlugin } from "@d1testflare/web-sockets";
 import type {
   EnvironmentContext,
   JestEnvironment,
@@ -6,25 +25,6 @@ import type {
 } from "@jest/environment";
 import { LegacyFakeTimers, ModernFakeTimers } from "@jest/fake-timers";
 import type { Circus, Config, Global } from "@jest/types";
-import { CachePlugin } from "@miniflare/cache";
-import {
-  BindingsPlugin,
-  CorePlugin,
-  MiniflareCore,
-  createFetchMock,
-} from "@miniflare/core";
-import {
-  DurableObjectId,
-  DurableObjectStorage,
-  DurableObjectsPlugin,
-} from "@miniflare/durable-objects";
-import { HTMLRewriterPlugin } from "@miniflare/html-rewriter";
-import { KVPlugin } from "@miniflare/kv";
-import { R2Plugin } from "@miniflare/r2";
-import { VMScriptRunner, defineHasInstances } from "@miniflare/runner-vm";
-import { Context, NoOpLog } from "@miniflare/shared";
-import { SitesPlugin } from "@miniflare/sites";
-import { WebSocketPlugin } from "@miniflare/web-sockets";
 import { ModuleMocker } from "jest-mock";
 import { installCommonGlobals } from "jest-util";
 import { MockAgent } from "undici";
@@ -97,7 +97,7 @@ export default class MiniflareEnvironment implements JestEnvironment<Timer> {
     this.context = vm.createContext({});
     // Make sure we define custom [Symbol.hasInstance]s for primitives so
     // cross-realm instanceof works correctly. This is done automatically
-    // when running scripts using @miniflare/runner-vm, but we might not be
+    // when running scripts using @d1testflare/runner-vm, but we might not be
     // using Durable Objects, so may never do this.
     defineHasInstances(this.context);
     this.scriptRunner = new VMScriptRunner(this.context);

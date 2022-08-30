@@ -1,13 +1,13 @@
 import { setImmediate } from "timers/promises";
-import { BindingsPlugin, ScheduledEvent } from "@miniflare/core";
+import { BindingsPlugin, ScheduledEvent } from "@d1testflare/core";
 import {
   CronScheduler,
   CronSchedulerImpl,
   SchedulerPlugin,
   startScheduler,
-} from "@miniflare/scheduler";
-import { Awaitable } from "@miniflare/shared";
-import { TestLog, useMiniflare } from "@miniflare/shared-test";
+} from "@d1testflare/scheduler";
+import { Awaitable } from "@d1testflare/shared";
+import { TestLog, useMiniflare } from "@d1testflare/shared-test";
 import test from "ava";
 import { Cron, ITimerHandle } from "cron-schedule";
 

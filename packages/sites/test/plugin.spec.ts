@@ -1,16 +1,16 @@
 import fs from "fs/promises";
 import path from "path";
-import { CachePlugin } from "@miniflare/cache";
-import { Request } from "@miniflare/core";
-import { Compatibility, NoOpLog, PluginContext } from "@miniflare/shared";
+import { CachePlugin } from "@d1testflare/cache";
+import { Request } from "@d1testflare/core";
+import { Compatibility, NoOpLog, PluginContext } from "@d1testflare/shared";
 import {
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
   useMiniflare,
   useTmp,
-} from "@miniflare/shared-test";
-import { SitesOptions, SitesPlugin } from "@miniflare/sites";
+} from "@d1testflare/shared-test";
+import { SitesOptions, SitesPlugin } from "@d1testflare/sites";
 import test, { Macro } from "ava";
 
 const log = new NoOpLog();

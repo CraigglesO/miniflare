@@ -2,12 +2,12 @@ import assert from "assert";
 import { ReadableStream } from "stream/web";
 import { setTimeout } from "timers/promises";
 import { TextDecoder, TextEncoder } from "util";
-import { Response } from "@miniflare/core";
-import { HTMLRewriter, HTMLRewriterPlugin } from "@miniflare/html-rewriter";
+import { Response } from "@d1testflare/core";
+import { HTMLRewriter, HTMLRewriterPlugin } from "@d1testflare/html-rewriter";
 import {
   getObjectProperties,
   useMiniflareWithHandler,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test, { ExecutionContext, Macro } from "ava";
 import {
   HTMLRewriter as BaseHTMLRewriter,

@@ -1,5 +1,5 @@
 {
-  "name": "miniflare",
+  "name": "d1testflare",
   "version": "2.7.1",
   "description": "Fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -30,7 +30,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cloudflare/miniflare.git",
-    "directory": "packages/miniflare"
+    "directory": "packages/d1testflare"
   },
   "bugs": {
     "url": "https://github.com/cloudflare/miniflare/issues"
@@ -43,41 +43,42 @@
     "src/cli.ts"
   ],
   "bin": {
-    "miniflare": "bootstrap.js"
+    "d1testflare": "bootstrap.js"
   },
   "dependencies": {
-    "@miniflare/cache": "2.7.1",
-    "@miniflare/cli-parser": "2.7.1",
-    "@miniflare/core": "2.7.1",
-    "@miniflare/durable-objects": "2.7.1",
-    "@miniflare/html-rewriter": "2.7.1",
-    "@miniflare/http-server": "2.7.1",
-    "@miniflare/kv": "2.7.1",
-    "@miniflare/r2": "2.7.1",
-    "@miniflare/runner-vm": "2.7.1",
-    "@miniflare/scheduler": "2.7.1",
-    "@miniflare/shared": "2.7.1",
-    "@miniflare/sites": "2.7.1",
-    "@miniflare/storage-file": "2.7.1",
-    "@miniflare/storage-memory": "2.7.1",
-    "@miniflare/web-sockets": "2.7.1",
+    "@d1testflare/cache": "2.7.1",
+    "@d1testflare/cli-parser": "2.7.1",
+    "@d1testflare/core": "2.7.1",
+    "@d1testflare/durable-objects": "2.7.1",
+    "@d1testflare/html-rewriter": "2.7.1",
+    "@d1testflare/http-server": "2.7.1",
+    "@d1testflare/d1": "2.7.1",
+    "@d1testflare/kv": "2.7.1",
+    "@d1testflare/r2": "2.7.1",
+    "@d1testflare/runner-vm": "2.7.1",
+    "@d1testflare/scheduler": "2.7.1",
+    "@d1testflare/shared": "2.7.1",
+    "@d1testflare/sites": "2.7.1",
+    "@d1testflare/storage-file": "2.7.1",
+    "@d1testflare/storage-memory": "2.7.1",
+    "@d1testflare/web-sockets": "2.7.1",
     "kleur": "^4.1.4",
     "semiver": "^1.1.0",
     "source-map-support": "^0.5.20",
     "undici": "5.9.1"
   },
   "devDependencies": {
-    "@miniflare/shared-test": "2.7.1",
+    "@d1testflare/shared-test": "2.7.1",
     "@types/source-map-support": "^0.5.4",
     "open": "^8.4.0"
   },
   "peerDependencies": {
-    "@miniflare/storage-redis": "2.7.1",
+    "@d1testflare/storage-redis": "2.7.1",
     "cron-schedule": "^3.0.4",
     "ioredis": "^4.27.9"
   },
   "peerDependenciesMeta": {
-    "@miniflare/storage-redis": {
+    "@d1testflare/storage-redis": {
       "optional": true
     },
     "cron-schedule": {

@@ -1,4 +1,4 @@
-import { parseArgv } from "@miniflare/cli-parser";
+import { parseArgv } from "@d1testflare/cli-parser";
 import {
   BeforeSetupResult,
   Context,
@@ -15,7 +15,7 @@ import {
   StorageFactory,
   WranglerConfig,
   logOptions,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { TestLog } from "./log";
 
 export function parsePluginArgv<Plugin extends PluginSignature>(

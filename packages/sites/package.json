@@ -1,5 +1,5 @@
 {
-  "name": "@miniflare/sites",
+  "name": "@d1testflare/sites",
   "version": "2.7.1",
   "description": "Workers Sites module for Miniflare: a fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -39,13 +39,13 @@
     "test/fixtures/plugin.assetHandler.modules.mjs"
   ],
   "dependencies": {
-    "@miniflare/kv": "2.7.1",
-    "@miniflare/shared": "2.7.1",
-    "@miniflare/storage-file": "2.7.1"
+    "@d1testflare/kv": "2.7.1",
+    "@d1testflare/shared": "2.7.1",
+    "@d1testflare/storage-file": "2.7.1"
   },
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "^0.1.3",
-    "@miniflare/core": "2.7.1",
-    "@miniflare/shared-test": "2.7.1"
+    "@d1testflare/core": "2.7.1",
+    "@d1testflare/shared-test": "2.7.1"
   }
 }

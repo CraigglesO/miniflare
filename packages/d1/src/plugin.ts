@@ -7,7 +7,7 @@ import {
   SetupResult,
   StorageFactory,
   resolveStoragePersist,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { D1Database } from "./database";
 
 export interface D1Options {

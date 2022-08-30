@@ -1,5 +1,5 @@
 import assert from "assert";
-import { MemoryStorageFactory } from "@miniflare/shared-test";
+import { MemoryStorageFactory } from "@d1testflare/shared-test";
 import anyTest, { TestInterface } from "ava";
 import { AlarmStore } from "../src/alarms";
 

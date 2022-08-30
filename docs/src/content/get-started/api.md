@@ -33,7 +33,7 @@ filename: package.json
 To initialise Miniflare, import the `Miniflare` class from `miniflare`:
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -156,7 +156,7 @@ to workers respectively:
 ---
 highlight: [15,16,17,21]
 ---
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -194,7 +194,7 @@ instance:
 ---
 highlight: [11]
 ---
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -323,7 +323,7 @@ parameter is a log level indicating which messages should be logged:
 ---
 highlight: [5]
 ---
-import { Miniflare, Log, LogLevel } from "miniflare";
+import { Miniflare, Log, LogLevel } from "d1testflare";
 
 const mf = new Miniflare({
   scriptPath: "worker.js",
@@ -340,7 +340,7 @@ scope of the sandbox. This can be very useful for testing:
 ---
 highlight: [9,10,11]
 ---
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -359,7 +359,7 @@ console.log(await res.text()); // Hello Miniflare!
 ## Reference
 
 ```js
-import { Miniflare, Log, LogLevel } from "miniflare";
+import { Miniflare, Log, LogLevel } from "d1testflare";
 
 const mf = new Miniflare({
   // All options are optional, but one of script or scriptPath is required

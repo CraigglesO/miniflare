@@ -1,10 +1,10 @@
-import { Storage, StoredValueMeta } from "@miniflare/shared";
+import { Storage, StoredValueMeta } from "@d1testflare/shared";
 import {
   TestStorageFactory,
   storageMacros,
   testClock,
-} from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import test, { ExecutionContext } from "ava";
 
 class MemoryStorageFactory extends TestStorageFactory {

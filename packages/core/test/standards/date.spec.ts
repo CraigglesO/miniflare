@@ -1,6 +1,6 @@
 import { setTimeout } from "timers/promises";
-import { createDate } from "@miniflare/core";
-import { RequestContext } from "@miniflare/shared";
+import { createDate } from "@d1testflare/core";
+import { RequestContext } from "@d1testflare/shared";
 import test from "ava";
 
 test("Date: uses regular Date if actual time requested", (t) => {

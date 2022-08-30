@@ -17,7 +17,7 @@ import {
   getRequestContext,
   usageModelExternalSubrequestLimit,
   viewToBuffer,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import dotenv from "dotenv";
 import { MiniflareCoreError } from "../error";
 import {

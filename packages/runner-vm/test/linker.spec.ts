@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
 import { TextDecoder } from "util";
-import { VMScriptRunner, VMScriptRunnerError } from "@miniflare/runner-vm";
+import { VMScriptRunner, VMScriptRunnerError } from "@d1testflare/runner-vm";
 import {
   Context,
   ModuleRule,
@@ -10,7 +10,7 @@ import {
   STRING_SCRIPT_PATH,
   ScriptRunnerResult,
   globsToMatcher,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import test, { Macro } from "ava";
 
 const fixturesPath = path.join(__dirname, "..", "..", "test", "fixtures");

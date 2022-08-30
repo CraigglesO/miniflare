@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import http from "http";
 import path from "path";
 import { promisify } from "util";
-import { IncomingRequestCfProperties } from "@miniflare/core";
+import { IncomingRequestCfProperties } from "@d1testflare/core";
 import {
   Awaitable,
   Clock,
@@ -12,7 +12,7 @@ import {
   PluginContext,
   SetupResult,
   defaultClock,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { dim } from "kleur/colors";
 import type { Attributes, Options } from "selfsigned";
 import { RequestInfo, fetch } from "undici";

@@ -1,4 +1,4 @@
-import { RequestInfo, Response } from "@miniflare/core";
+import { RequestInfo, Response } from "@d1testflare/core";
 import { Response as BaseResponse } from "undici";
 
 export interface CacheMatchOptions {

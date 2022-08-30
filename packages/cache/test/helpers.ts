@@ -1,4 +1,4 @@
-import { Response } from "@miniflare/core";
+import { Response } from "@d1testflare/core";
 import { BodyInit, FormData, HeadersInit } from "undici";
 
 export const testResponse = (body: BodyInit = "value"): Response => {

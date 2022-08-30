@@ -1,4 +1,4 @@
-import { NoOpCache } from "@miniflare/cache";
+import { NoOpCache } from "@d1testflare/cache";
 import test from "ava";
 import { testResponse } from "./helpers";
 

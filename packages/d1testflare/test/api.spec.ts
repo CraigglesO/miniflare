@@ -1,10 +1,10 @@
 import { AddressInfo } from "net";
-import { Response } from "@miniflare/core";
-import { Log, LogLevel } from "@miniflare/shared";
-import { interceptConsoleLogs, useTmp } from "@miniflare/shared-test";
+import { Response } from "@d1testflare/core";
+import { Log, LogLevel } from "@d1testflare/shared";
+import { interceptConsoleLogs, useTmp } from "@d1testflare/shared-test";
 import test from "ava";
-import { Miniflare, VariedStorageFactory } from "miniflare";
 import { fetch } from "undici";
+import { Miniflare, VariedStorageFactory } from "../src";
 
 function clearArray(arr: any[]): void {
   arr.splice(0, arr.length);

@@ -1,7 +1,7 @@
 import { createHash, webcrypto } from "crypto";
 import { WritableStream } from "stream/web";
-import { DOMException } from "@miniflare/core";
-import { viewToBuffer } from "@miniflare/shared";
+import { DOMException } from "@d1testflare/core";
+import { viewToBuffer } from "@d1testflare/shared";
 import {
   assertsInRequest,
   bufferSourceToArray,

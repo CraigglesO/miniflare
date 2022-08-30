@@ -3,7 +3,7 @@ import { existsSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
 import test from "ava";
-import { MiniflareOptions } from "miniflare";
+import { MiniflareOptions } from "d1testflare";
 
 const fixturesPath = path.join(__dirname, "..", "..", "test", "fixtures");
 

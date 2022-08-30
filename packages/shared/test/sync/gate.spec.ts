@@ -9,8 +9,8 @@ import {
   waitForOpenInputGate,
   waitForOpenOutputGate,
   waitUntilOnOutputGate,
-} from "@miniflare/shared";
-import { noop, triggerPromise } from "@miniflare/shared-test";
+} from "@d1testflare/shared";
+import { noop, triggerPromise } from "@d1testflare/shared-test";
 import test from "ava";
 
 test("waitForOpenInputGate: waits for input gate in context to open", async (t) => {

@@ -1,10 +1,10 @@
-import { createCrypto } from "@miniflare/core";
-import { D1Plugin } from "@miniflare/d1";
+import { createCrypto } from "@d1testflare/core";
+import { D1Plugin } from "@d1testflare/d1";
 import {
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const crypto = createCrypto();

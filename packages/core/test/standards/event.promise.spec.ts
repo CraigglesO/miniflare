@@ -4,9 +4,9 @@ import {
   ServiceWorkerGlobalScope,
   WorkerGlobalScopeEventMap,
   kDispose,
-} from "@miniflare/core";
-import { LogLevel, TypedEventListener } from "@miniflare/shared";
-import { TestLog, triggerPromise } from "@miniflare/shared-test";
+} from "@d1testflare/core";
+import { LogLevel, TypedEventListener } from "@d1testflare/shared";
+import { TestLog, triggerPromise } from "@d1testflare/shared-test";
 import anyTest, { Macro, TestInterface } from "ava";
 
 interface Context {

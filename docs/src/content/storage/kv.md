@@ -114,7 +114,7 @@ Redis support is not included by default. You must install an optional peer
 dependency:
 
 ```sh
-$ npm install -D @miniflare/storage-redis
+$ npm install -D @d1testflare/storage-redis
 ```
 
 </Aside>
@@ -144,7 +144,7 @@ do this with the `getKVNamespace` method:
 ---
 highlight: [17,18,22]
 ---
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   modules: true,

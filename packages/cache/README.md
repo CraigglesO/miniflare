@@ -1,4 +1,4 @@
-# `@miniflare/cache`
+# `@d1testflare/cache`
 
 Cache module for [Miniflare](https://github.com/cloudflare/miniflare): a fun,
 full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,9 +7,9 @@ full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { Cache } from "@miniflare/cache";
-import { Response } from "@miniflare/core";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { Cache } from "@d1testflare/cache";
+import { Response } from "@d1testflare/core";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 
 const cache = new Cache(new MemoryStorage());
 

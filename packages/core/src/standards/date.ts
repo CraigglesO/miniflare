@@ -1,4 +1,4 @@
-import { getRequestContext } from "@miniflare/shared";
+import { getRequestContext } from "@d1testflare/shared";
 
 // `Date.now` may be overridden in user code. If this calls `new Date()`, we'll
 // end up with unbounded recursion, so store a reference to the original.

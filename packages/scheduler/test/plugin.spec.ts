@@ -1,10 +1,10 @@
-import { SchedulerError, SchedulerPlugin } from "@miniflare/scheduler";
-import { Compatibility, NoOpLog, PluginContext } from "@miniflare/shared";
+import { SchedulerError, SchedulerPlugin } from "@d1testflare/scheduler";
+import { Compatibility, NoOpLog, PluginContext } from "@d1testflare/shared";
 import {
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const log = new NoOpLog();

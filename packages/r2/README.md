@@ -1,4 +1,4 @@
-# `@miniflare/r2`
+# `@d1testflare/r2`
 
 Workers R2 module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,8 +7,8 @@ fun, full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { R2Bucket } from "@miniflare/r2";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { R2Bucket } from "@d1testflare/r2";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 
 const r2 = new R2Bucket(new MemoryStorage());
 await r2.put("key", "value");

@@ -1,19 +1,19 @@
 import assert from "assert";
 import path from "path";
-import { R2Bucket, R2Plugin } from "@miniflare/r2";
+import { R2Bucket, R2Plugin } from "@d1testflare/r2";
 import {
   Compatibility,
   NoOpLog,
   PluginContext,
   StoredValueMeta,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const log = new NoOpLog();

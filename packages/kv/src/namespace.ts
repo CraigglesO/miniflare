@@ -13,7 +13,7 @@ import {
   viewToBuffer,
   waitForOpenInputGate,
   waitForOpenOutputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 
 const MIN_CACHE_TTL = 60; /* 60s */
 const MAX_LIST_KEYS = 1000;

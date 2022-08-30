@@ -1,4 +1,4 @@
-import { DOMException, atob, btoa } from "@miniflare/core";
+import { DOMException, atob, btoa } from "@d1testflare/core";
 import test from "ava";
 
 test("btoa: base64 encodes data", (t) => {

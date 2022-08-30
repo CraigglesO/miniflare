@@ -5,7 +5,7 @@ import {
   RequestInitCfProperties,
   Response,
   withStringFormDataFiles,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import {
   Awaitable,
   Clock,
@@ -16,7 +16,7 @@ import {
   millisToSeconds,
   waitForOpenInputGate,
   waitForOpenOutputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import CachePolicy from "http-cache-semantics";
 import {
   Request as BaseRequest,
@@ -239,7 +239,7 @@ export class Cache implements CacheInterface {
     // Build Response from cache
     const headers = new Headers(cached.metadata.headers);
     headers.set("CF-Cache-Status", "HIT");
-    // Returning a @miniflare/core Response so we don't need to convert
+    // Returning a @d1testflare/core Response so we don't need to convert
     // BaseResponse to one when dispatching fetch events
     let res = new Response(cached.value, {
       status: cached.metadata.status,

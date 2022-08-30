@@ -10,8 +10,8 @@ import {
   defaultClock,
   sanitisePath,
   viewToArray,
-} from "@miniflare/shared";
-import { LocalStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/shared";
+import { LocalStorage } from "@d1testflare/storage-memory";
 import {
   deleteFile,
   readFile,

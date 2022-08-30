@@ -37,7 +37,7 @@ import {
   STRING_SCRIPT_PATH,
   SetupResult,
   globsToMatcher,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { File, FormData, Headers, MockAgent } from "undici";
 // @ts-expect-error `urlpattern-polyfill` only provides global types
 import { URLPattern } from "urlpattern-polyfill";

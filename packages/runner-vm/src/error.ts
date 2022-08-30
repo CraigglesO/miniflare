@@ -1,4 +1,4 @@
-import { MiniflareError } from "@miniflare/shared";
+import { MiniflareError } from "@d1testflare/shared";
 
 export type VMScriptRunnerErrorCode =
   | "ERR_MODULE_DISABLED" // Missing --experimental-vm-modules flag

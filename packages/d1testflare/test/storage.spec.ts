@@ -1,10 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
-import { useTmp, utf8Decode, utf8Encode } from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { useTmp, utf8Decode, utf8Encode } from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import test from "ava";
 import type IORedis from "ioredis";
-import { VariedStorageFactory } from "miniflare";
+import { VariedStorageFactory } from "../src";
 
 test("VariedStorageFactory: creates and reuses in-memory-storage", async (t) => {
   const memoryStorages = new Map<string, MemoryStorage>();

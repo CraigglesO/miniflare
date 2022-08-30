@@ -4,7 +4,7 @@ import { AddressInfo } from "net";
 import path from "path";
 import { text } from "stream/consumers";
 import { setTimeout } from "timers/promises";
-import { CachePlugin } from "@miniflare/cache";
+import { CachePlugin } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   CorePlugin,
@@ -12,12 +12,12 @@ import {
   MiniflareCoreContext,
   MiniflareCoreError,
   ReloadEvent,
-} from "@miniflare/core";
-import { DurableObjectsPlugin } from "@miniflare/durable-objects";
-import { HTTPPlugin, createServer } from "@miniflare/http-server";
-import { KVPlugin } from "@miniflare/kv";
-import { VMScriptRunner } from "@miniflare/runner-vm";
-import { LogLevel, NoOpLog, StoredValueMeta } from "@miniflare/shared";
+} from "@d1testflare/core";
+import { DurableObjectsPlugin } from "@d1testflare/durable-objects";
+import { HTTPPlugin, createServer } from "@d1testflare/http-server";
+import { KVPlugin } from "@d1testflare/kv";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
+import { LogLevel, NoOpLog, StoredValueMeta } from "@d1testflare/shared";
 import {
   AsyncTestLog,
   MemoryStorageFactory,
@@ -26,9 +26,9 @@ import {
   useMiniflare,
   useTmp,
   waitForReload,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test, { Macro, ThrowsExpectation } from "ava";
-import { MiniflareOptions } from "miniflare";
+import { MiniflareOptions } from "d1testflare";
 
 // Specific tests for `mounts` option
 

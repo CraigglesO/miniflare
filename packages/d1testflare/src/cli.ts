@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import fs from "fs/promises";
 import path from "path";
-import type { Options } from "@miniflare/shared";
+import type { Options } from "@d1testflare/shared";
 import { red } from "kleur/colors";
-import type { MiniflareOptions } from "miniflare";
 import open from "open";
+import type { MiniflareOptions } from "./api";
 import { updateCheck } from "./updater";
 
 function suppressWarnings() {
@@ -32,15 +32,15 @@ async function main() {
     ParseError,
     buildHelp,
     parseArgv,
-  }: typeof import("@miniflare/cli-parser") = require("@miniflare/cli-parser");
+  }: typeof import("@d1testflare/cli-parser") = require("@d1testflare/cli-parser");
   const {
     Log,
     LogLevel,
-  }: typeof import("@miniflare/shared") = require("@miniflare/shared");
+  }: typeof import("@d1testflare/shared") = require("@d1testflare/shared");
   const {
     Miniflare,
     PLUGINS,
-  }: typeof import("miniflare") = require("miniflare");
+  }: typeof import("@d1testflare/d1testflare") = require("miniflare");
 
   // Parse command line options
   let options: Options<typeof PLUGINS>;

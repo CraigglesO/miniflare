@@ -1,19 +1,19 @@
 import assert from "assert";
 import path from "path";
-import { KVNamespace, KVPlugin } from "@miniflare/kv";
+import { KVNamespace, KVPlugin } from "@d1testflare/kv";
 import {
   Compatibility,
   NoOpLog,
   PluginContext,
   StoredValueMeta,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   logPluginOptions,
   parsePluginArgv,
   parsePluginWranglerConfig,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const log = new NoOpLog();

@@ -6,7 +6,7 @@ import {
   PluginContext,
   SetupResult,
   globsToMatcher,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { FilteredKVNamespace } from "./filtered";
 
 export interface SitesOptions {
@@ -60,7 +60,7 @@ export class SitesPlugin extends Plugin<SitesOptions> implements SitesOptions {
     // /'s resolve correctly
     const {
       FileStorage,
-    }: typeof import("@miniflare/storage-file") = require("@miniflare/storage-file");
+    }: typeof import("@d1testflare/storage-file") = require("@d1testflare/storage-file");
     const sitePath = path.resolve(this.ctx.rootPath, this.sitePath);
     const storage = new FileStorage(sitePath, false);
     const bindings = {

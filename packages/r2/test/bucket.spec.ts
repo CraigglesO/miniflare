@@ -13,7 +13,7 @@ import {
   R2PutValueType,
   createHash,
   parseR2ObjectMetadata,
-} from "@miniflare/r2";
+} from "@d1testflare/r2";
 import {
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
   RequestContext,
@@ -22,7 +22,7 @@ import {
   StoredValueMeta,
   base64Encode,
   viewToBuffer,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   advancesTime,
   getObjectProperties,
@@ -31,8 +31,8 @@ import {
   utf8Encode,
   waitsForInputGate,
   waitsForOutputGate,
-} from "@miniflare/shared-test";
-import { FileStorage } from "@miniflare/storage-file";
+} from "@d1testflare/shared-test";
+import { FileStorage } from "@d1testflare/storage-file";
 import anyTest, {
   ExecutionContext,
   Macro,

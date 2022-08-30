@@ -2,8 +2,8 @@ import fs from "fs/promises";
 import path from "path";
 import { TransformStream } from "stream/web";
 import { setImmediate, setTimeout } from "timers/promises";
-import { useTmp } from "@miniflare/shared-test";
-import { Watcher } from "@miniflare/watcher";
+import { useTmp } from "@d1testflare/shared-test";
+import { Watcher } from "@d1testflare/watcher";
 import anyTest, { ExecutionContext, Macro } from "ava";
 
 // Only run watcher tests on macOS. The Watcher does work on Linux and Windows,

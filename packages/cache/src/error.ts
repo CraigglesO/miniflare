@@ -1,4 +1,4 @@
-import { MiniflareError } from "@miniflare/shared";
+import { MiniflareError } from "@d1testflare/shared";
 
 export type CacheErrorCode =
   | "ERR_RESERVED" // Attempted to create cache with name "default"

@@ -1,20 +1,20 @@
 import assert from "assert";
-import { Request } from "@miniflare/core";
-import type { FetchEvent } from "@miniflare/core";
-import { Compatibility, NoOpLog, PluginContext } from "@miniflare/shared";
+import { Request } from "@d1testflare/core";
+import type { FetchEvent } from "@d1testflare/core";
+import { Compatibility, NoOpLog, PluginContext } from "@d1testflare/shared";
 import {
   noop,
   triggerPromise,
   useMiniflare,
   useServer,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import {
   CloseEvent,
   MessageEvent,
   WebSocket,
   WebSocketPair,
   WebSocketPlugin,
-} from "@miniflare/web-sockets";
+} from "@d1testflare/web-sockets";
 import test from "ava";
 
 const log = new NoOpLog();

@@ -63,7 +63,7 @@ $ miniflare worker.js --watch --debug
 ## Using the API
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `

@@ -1,4 +1,4 @@
-# `@miniflare/cli-parser`
+# `@d1testflare/cli-parser`
 
 CLI option parsing module for
 [Miniflare](https://github.com/cloudflare/miniflare): a fun, full-featured,
@@ -8,9 +8,9 @@ fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { buildHelp, parseArgv } from "@miniflare/cli-parser";
-import { BuildPlugin } from "@miniflare/core";
-import { KVPlugin } from "@miniflare/kv";
+import { buildHelp, parseArgv } from "@d1testflare/cli-parser";
+import { BuildPlugin } from "@d1testflare/core";
+import { KVPlugin } from "@d1testflare/kv";
 
 const plugins = { BuildPlugin, KVPlugin };
 

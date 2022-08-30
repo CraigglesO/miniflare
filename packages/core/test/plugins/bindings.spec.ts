@@ -3,14 +3,14 @@ import { readFileSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
 import { setImmediate } from "timers/promises";
-import { CachePlugin } from "@miniflare/cache";
+import { CachePlugin } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   Fetcher,
   MiniflareCoreError,
   Response,
   _CoreMount,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import {
   Compatibility,
   LogLevel,
@@ -18,8 +18,8 @@ import {
   PluginContext,
   getRequestContext,
   viewToBuffer,
-} from "@miniflare/shared";
-import { TestLog } from "@miniflare/shared-test";
+} from "@d1testflare/shared";
+import { TestLog } from "@d1testflare/shared-test";
 import {
   getObjectProperties,
   logPluginOptions,
@@ -28,7 +28,7 @@ import {
   useMiniflare,
   useServer,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const log = new NoOpLog();

@@ -6,7 +6,7 @@ import {
   getRequestContext,
   kWrapListener,
   waitForOpenOutputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 
 export class MessageEvent extends Event {
   readonly data: ArrayBuffer | string;

@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { TextDecoder, TextEncoder } from "util";
-import { randomHex, sanitisePath } from "@miniflare/shared";
+import { randomHex, sanitisePath } from "@d1testflare/shared";
 import { ExecutionContext } from "ava";
 
 const encoder = new TextEncoder();

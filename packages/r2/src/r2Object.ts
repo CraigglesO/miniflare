@@ -3,7 +3,7 @@ import crypto from "crypto";
 import { arrayBuffer } from "stream/consumers";
 import { ReadableStream } from "stream/web";
 import { TextDecoder } from "util";
-import { waitForOpenInputGate } from "@miniflare/shared";
+import { waitForOpenInputGate } from "@d1testflare/shared";
 import { Headers } from "undici";
 import { R2Conditional, R2Range } from "./bucket";
 

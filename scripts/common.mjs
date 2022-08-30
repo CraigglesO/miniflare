@@ -12,7 +12,7 @@ export const pkgsList = (await fs.readdir(pkgsDir)).filter(
   (name) => name !== ".DS_Store"
 );
 
-export const scope = "@miniflare";
+export const scope = "@d1testflare";
 
 /**
  * @typedef {object} ~Package

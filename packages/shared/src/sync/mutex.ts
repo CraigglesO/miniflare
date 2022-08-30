@@ -1,5 +1,5 @@
 import assert from "assert";
-import { Awaitable } from "@miniflare/shared";
+import { Awaitable } from "@d1testflare/shared";
 
 export class Mutex {
   private locked = false;

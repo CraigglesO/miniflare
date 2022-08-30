@@ -40,7 +40,7 @@ script was stored in `echo.mjs`:
 ---
 highlight: [9,10,11,12,13,14,15]
 ---
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   modules: true,

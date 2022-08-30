@@ -1,5 +1,5 @@
 import { performance } from "node:perf_hooks";
-import { Storage } from "@miniflare/shared";
+import { Storage } from "@d1testflare/shared";
 import Database from "better-sqlite3";
 import type {
   Database as SqliteDB,

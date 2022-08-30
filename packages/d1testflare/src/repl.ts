@@ -1,6 +1,6 @@
 import repl from "repl";
 import vm from "vm";
-import { CorePluginSignatures, MiniflareCore } from "@miniflare/core";
+import { CorePluginSignatures, MiniflareCore } from "@d1testflare/core";
 
 interface MutableContextREPLServer extends repl.REPLServer {
   context: vm.Context;

@@ -7,7 +7,7 @@ import {
   SetupResult,
   StorageFactory,
   resolveStoragePersist,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { Cache, InternalCacheOptions } from "./cache";
 import { CacheError } from "./error";
 import { CacheInterface } from "./helpers";
@@ -55,7 +55,7 @@ export class CacheStorage {
     const { cache, cachePersist } = this.#options;
     if (cache === false) return NOOP_CACHE;
     // Return cache, deferring storage await to Cache, since this needs to
-    // return synchronously. We want to avoid loading @miniflare/storage-*
+    // return synchronously. We want to avoid loading @d1testflare/storage-*
     // packages unless the user is actually using storage. Since Cache is
     // included by default, we'd always load these if we didn't do it lazily.
     // There's a risk of an unhandled promise rejection here is the user

@@ -1,4 +1,4 @@
-import { ThrowingEventTarget } from "@miniflare/shared";
+import { ThrowingEventTarget } from "@d1testflare/shared";
 import test from "ava";
 
 test("ThrowingEventTarget: propagates error from listener", (t) => {

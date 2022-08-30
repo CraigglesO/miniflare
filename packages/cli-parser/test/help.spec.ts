@@ -1,6 +1,6 @@
-import { _wrapLines, buildHelp } from "@miniflare/cli-parser";
-import { CorePlugin } from "@miniflare/core";
-import { TestPlugin } from "@miniflare/shared-test";
+import { _wrapLines, buildHelp } from "@d1testflare/cli-parser";
+import { CorePlugin } from "@d1testflare/core";
+import { TestPlugin } from "@d1testflare/shared-test";
 import test from "ava";
 
 const plugins = { CorePlugin, TestPlugin };

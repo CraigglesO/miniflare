@@ -8,7 +8,7 @@ import {
   StoredKeyMeta,
   StoredMeta,
   StoredValueMeta,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 
 export type StorageEvent =
   | { type: "has"; key: string }

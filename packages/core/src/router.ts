@@ -1,5 +1,5 @@
 import { URL, domainToUnicode } from "url";
-import { MiniflareError } from "@miniflare/shared";
+import { MiniflareError } from "@d1testflare/shared";
 
 export type RouterErrorCode = "ERR_QUERY_STRING" | "ERR_INFIX_WILDCARD";
 

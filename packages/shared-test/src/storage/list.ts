@@ -1,4 +1,4 @@
-import { StorageListOptions } from "@miniflare/shared";
+import { StorageListOptions } from "@d1testflare/shared";
 import { Macro } from "ava";
 import { utf8Encode } from "../data";
 import {

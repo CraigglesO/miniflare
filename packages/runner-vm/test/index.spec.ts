@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { VMScriptRunner } from "@miniflare/runner-vm";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
 import test, { ThrowsExpectation } from "ava";
 
 const fixturesPath = path.join(__dirname, "..", "..", "test", "fixtures");

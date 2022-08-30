@@ -18,7 +18,7 @@ import {
   withInputGating,
   withStringFormDataFiles,
   withWaitUntil,
-} from "@miniflare/core";
+} from "@d1testflare/core";
 import {
   Compatibility,
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
@@ -26,7 +26,7 @@ import {
   LogLevel,
   NoOpLog,
   RequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TestLog,
   advancesTime,
@@ -36,8 +36,8 @@ import {
   utf8Encode,
   waitsForInputGate,
   waitsForOutputGate,
-} from "@miniflare/shared-test";
-import { WebSocketPair } from "@miniflare/web-sockets";
+} from "@d1testflare/shared-test";
+import { WebSocketPair } from "@d1testflare/web-sockets";
 import test, { Macro } from "ava";
 import {
   Request as BaseRequest,
@@ -62,7 +62,7 @@ async function byobReadFirstChunk(body: ReadableStream<Uint8Array> | null) {
 test('Headers: getAll: throws if key not "Set-Cookie"', (t) => {
   const headers = new Headers();
   // @ts-expect-error getAll is added to the Headers prototype by importing
-  // @miniflare/core
+  // @d1testflare/core
   t.throws(() => headers.getAll("set-biscuit"), {
     instanceOf: TypeError,
     message: 'getAll() can only be used with the header name "Set-Cookie".',
@@ -71,7 +71,7 @@ test('Headers: getAll: throws if key not "Set-Cookie"', (t) => {
 test("Headers: getAll: returns empty array if no headers", (t) => {
   const headers = new Headers();
   // @ts-expect-error getAll is added to the Headers prototype by importing
-  // @miniflare/core
+  // @d1testflare/core
   t.deepEqual(headers.getAll("Set-Cookie"), []);
 });
 test("Headers: getAll: returns separated Set-Cookie values", (t) => {
@@ -84,7 +84,7 @@ test("Headers: getAll: returns separated Set-Cookie values", (t) => {
   headers.append("Set-Cookie", cookie3);
   t.is(headers.get("set-Cookie"), [cookie1, cookie2, cookie3].join(", "));
   // @ts-expect-error getAll is added to the Headers prototype by importing
-  // @miniflare/core
+  // @d1testflare/core
   t.deepEqual(headers.getAll("set-CoOkiE"), [cookie1, cookie2, cookie3]);
 });
 

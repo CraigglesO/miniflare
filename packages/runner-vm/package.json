@@ -1,5 +1,5 @@
 {
-  "name": "@miniflare/runner-vm",
+  "name": "@d1testflare/runner-vm",
   "version": "2.7.1",
   "description": "VM script runner module for Miniflare: a fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -35,9 +35,9 @@
     "extends": "../../package.json"
   },
   "dependencies": {
-    "@miniflare/shared": "2.7.1"
+    "@d1testflare/shared": "2.7.1"
   },
   "devDependencies": {
-    "@miniflare/shared-test": "2.7.1"
+    "@d1testflare/shared-test": "2.7.1"
   }
 }

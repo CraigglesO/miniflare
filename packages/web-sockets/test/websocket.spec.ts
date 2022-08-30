@@ -5,21 +5,21 @@ import {
   RequestContext,
   RequestContextOptions,
   getRequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TestInputGate,
   noop,
   triggerPromise,
   useServer,
   waitsForOutputGate,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import {
   CloseEvent,
   MessageEvent,
   WebSocket,
   WebSocketPair,
   coupleWebSocket,
-} from "@miniflare/web-sockets";
+} from "@d1testflare/web-sockets";
 import test, { ExecutionContext } from "ava";
 import StandardWebSocket from "ws";
 

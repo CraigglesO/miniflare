@@ -10,7 +10,7 @@ import {
   StoredValueMeta,
   defaultClock,
   millisToSeconds,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { listFilterMatch, listPaginate } from "./helpers";
 
 export abstract class LocalStorage extends Storage {

@@ -4,7 +4,7 @@ import {
   OptionType,
   Plugin,
   PluginContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import type { Cron } from "cron-schedule";
 
 export type SchedulerErrorCode = "ERR_INVALID_CRON"; // Invalid CRON expression

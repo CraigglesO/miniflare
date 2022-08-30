@@ -6,8 +6,8 @@ import {
   Response,
   _headersFromIncomingRequest,
   fetch,
-} from "@miniflare/core";
-import { getRequestContext } from "@miniflare/shared";
+} from "@d1testflare/core";
+import { getRequestContext } from "@d1testflare/shared";
 import { Dispatcher, Headers } from "undici";
 import StandardWebSocket from "ws";
 import { coupleWebSocket } from "./couple";

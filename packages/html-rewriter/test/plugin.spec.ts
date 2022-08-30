@@ -1,6 +1,6 @@
-import { Response } from "@miniflare/core";
-import { HTMLRewriter, HTMLRewriterPlugin } from "@miniflare/html-rewriter";
-import { Compatibility, NoOpLog, PluginContext } from "@miniflare/shared";
+import { Response } from "@d1testflare/core";
+import { HTMLRewriter, HTMLRewriterPlugin } from "@d1testflare/html-rewriter";
+import { Compatibility, NoOpLog, PluginContext } from "@d1testflare/shared";
 import test from "ava";
 import type { ElementHandlers } from "html-rewriter-wasm";
 

@@ -1,4 +1,4 @@
-import { Awaitable } from "@miniflare/shared";
+import { Awaitable } from "@d1testflare/shared";
 
 // Multi-reader, single-writer lock
 export class ReadWriteMutex {

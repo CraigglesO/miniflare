@@ -3,7 +3,7 @@ import {
   TransformStream,
   WritableStreamDefaultWriter,
 } from "stream/web";
-import { Log, LogLevel } from "@miniflare/shared";
+import { Log, LogLevel } from "@d1testflare/shared";
 import { ExecutionContext } from "ava";
 
 export type LogEntry = [level: LogLevel, message: string];

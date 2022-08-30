@@ -1,4 +1,4 @@
-import { utf8Encode } from "@miniflare/shared-test";
+import { utf8Encode } from "@d1testflare/shared-test";
 import { Macro } from "ava";
 import { MIXED_SEED, TestStorageFactory } from "./shared";
 

@@ -1,7 +1,7 @@
 // noinspection HttpUrlsUsage
 
 import { URL } from "url";
-import { Router, RouterError } from "@miniflare/core";
+import { Router, RouterError } from "@d1testflare/core";
 import test from "ava";
 
 // See https://developers.cloudflare.com/workers/platform/routes#matching-behavior and

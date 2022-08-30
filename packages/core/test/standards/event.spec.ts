@@ -12,8 +12,8 @@ import {
   kAddModuleFetchListener,
   kDispatchFetch,
   kDispatchScheduled,
-} from "@miniflare/core";
-import { NoOpLog } from "@miniflare/shared";
+} from "@d1testflare/core";
+import { NoOpLog } from "@d1testflare/shared";
 import {
   TestLog,
   getObjectProperties,
@@ -21,7 +21,7 @@ import {
   triggerPromise,
   useMiniflare,
   useServer,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import anyTest, { TestInterface, ThrowsExpectation } from "ava";
 
 interface Context {

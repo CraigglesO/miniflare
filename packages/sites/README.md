@@ -1,4 +1,4 @@
-# `@miniflare/sites`
+# `@d1testflare/sites`
 
 Workers Sites module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,10 +7,10 @@ fun, full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { CorePlugin, MiniflareCore } from "@miniflare/core";
-import { VMScriptRunner } from "@miniflare/runner-vm";
-import { Log, LogLevel } from "@miniflare/shared";
-import { SitesPlugin } from "@miniflare/sites";
+import { CorePlugin, MiniflareCore } from "@d1testflare/core";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
+import { Log, LogLevel } from "@d1testflare/shared";
+import { SitesPlugin } from "@d1testflare/sites";
 
 export class BadStorageFactory {
   storage() {

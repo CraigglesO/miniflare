@@ -1,16 +1,16 @@
 import assert from "assert";
 import http from "http";
 import { AddressInfo } from "net";
-import { viewToBuffer } from "@miniflare/shared";
+import { viewToBuffer } from "@d1testflare/shared";
 import {
   noop,
   triggerPromise,
   useServer,
   utf8Decode,
   utf8Encode,
-} from "@miniflare/shared-test";
-import { WebSocketPair, coupleWebSocket } from "@miniflare/web-sockets";
-import { CloseEvent, MessageEvent } from "@miniflare/web-sockets";
+} from "@d1testflare/shared-test";
+import { WebSocketPair, coupleWebSocket } from "@d1testflare/web-sockets";
+import { CloseEvent, MessageEvent } from "@d1testflare/web-sockets";
 import test from "ava";
 import StandardWebSocket, {
   Event as WebSocketEvent,

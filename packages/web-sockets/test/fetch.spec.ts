@@ -4,28 +4,28 @@ import http from "http";
 import { AddressInfo } from "net";
 import { TransformStream } from "stream/web";
 import { URLSearchParams } from "url";
-import { CachePlugin } from "@miniflare/cache";
-import { BindingsPlugin, createCompatFetch } from "@miniflare/core";
-import { DurableObjectsPlugin } from "@miniflare/durable-objects";
+import { CachePlugin } from "@d1testflare/cache";
+import { BindingsPlugin, createCompatFetch } from "@d1testflare/core";
+import { DurableObjectsPlugin } from "@d1testflare/durable-objects";
 import {
   Compatibility,
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
   LogLevel,
   RequestContext,
   getRequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TestLog,
   noop,
   triggerPromise,
   useMiniflare,
   useServer,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import {
   MessageEvent,
   WebSocketPlugin,
   upgradingFetch,
-} from "@miniflare/web-sockets";
+} from "@d1testflare/web-sockets";
 import test from "ava";
 import { FormData } from "undici";
 import StandardWebSocket, {

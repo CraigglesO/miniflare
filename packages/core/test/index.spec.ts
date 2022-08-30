@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import { AddressInfo } from "net";
 import path from "path";
 import { setTimeout } from "timers/promises";
-import { CachePlugin, CacheStorage } from "@miniflare/cache";
+import { CachePlugin, CacheStorage } from "@d1testflare/cache";
 import {
   BindingsPlugin,
   BuildPlugin,
@@ -18,10 +18,10 @@ import {
   RequestInit,
   _deepEqual,
   createFetchMock,
-} from "@miniflare/core";
-import { DurableObjectsPlugin } from "@miniflare/durable-objects";
-import { HTTPPlugin, createServer } from "@miniflare/http-server";
-import { VMScriptRunner } from "@miniflare/runner-vm";
+} from "@d1testflare/core";
+import { DurableObjectsPlugin } from "@d1testflare/durable-objects";
+import { HTTPPlugin, createServer } from "@d1testflare/http-server";
+import { VMScriptRunner } from "@d1testflare/runner-vm";
 import {
   Context,
   LogLevel,
@@ -30,7 +30,7 @@ import {
   Storage,
   TypedEventListener,
   getRequestContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   AsyncTestLog,
   LogEntry,
@@ -47,7 +47,7 @@ import {
   utf8Decode,
   utf8Encode,
   waitForReload,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test, { Macro } from "ava";
 import { Request as BaseRequest, File, FormData } from "undici";
 

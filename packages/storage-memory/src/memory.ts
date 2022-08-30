@@ -1,5 +1,9 @@
-import { Range, RangeStoredValueMeta, defaultClock } from "@miniflare/shared";
-import { StoredKeyMeta, StoredMeta, StoredValueMeta } from "@miniflare/shared";
+import { Range, RangeStoredValueMeta, defaultClock } from "@d1testflare/shared";
+import {
+  StoredKeyMeta,
+  StoredMeta,
+  StoredValueMeta,
+} from "@d1testflare/shared";
 import { cloneMetadata } from "./helpers";
 import { LocalStorage } from "./local";
 

@@ -1,13 +1,13 @@
 import assert from "assert";
 import { URL } from "url";
-import { Cache, CacheError, CachedMeta } from "@miniflare/cache";
-import { Request, RequestInitCfProperties, Response } from "@miniflare/core";
+import { Cache, CacheError, CachedMeta } from "@d1testflare/cache";
+import { Request, RequestInitCfProperties, Response } from "@d1testflare/core";
 import {
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
   RequestContext,
   RequestContextOptions,
   Storage,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   advancesTime,
   getObjectProperties,
@@ -15,9 +15,9 @@ import {
   utf8Encode,
   waitsForInputGate,
   waitsForOutputGate,
-} from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
-import { WebSocketPair } from "@miniflare/web-sockets";
+} from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
+import { WebSocketPair } from "@d1testflare/web-sockets";
 import anyTest, { Macro, TestInterface, ThrowsExpectation } from "ava";
 import {
   Request as BaseRequest,

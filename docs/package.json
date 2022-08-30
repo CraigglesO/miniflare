@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@miniflare/docs",
+  "name": "@d1testflare/docs",
   "author": "MrBBot <me@mrbbot.dev>",
   "scripts": {
     "bootstrap": "node_modules/cloudflare-docs-engine/bin/commands.sh bootstrap",

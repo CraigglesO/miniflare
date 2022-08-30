@@ -1,7 +1,7 @@
 import { webcrypto } from "crypto";
 import { TextEncoder } from "util";
-import { DOMException, DigestStream, createCrypto } from "@miniflare/core";
-import { utf8Encode } from "@miniflare/shared-test";
+import { DOMException, DigestStream, createCrypto } from "@d1testflare/core";
+import { utf8Encode } from "@d1testflare/shared-test";
 import test, { Macro } from "ava";
 
 const crypto = createCrypto();

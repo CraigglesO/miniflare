@@ -82,7 +82,7 @@ export interface SetupResult extends BeforeSetupResult {
   additionalModules?: AdditionalModules;
 }
 
-// TODO: should probably move Request and Response classes to @miniflare/shared
+// TODO: should probably move Request and Response classes to @d1testflare/shared
 export interface Mount<Request = any, Response = any> {
   moduleExports?: Context;
   dispatchFetch?: (request: Request) => Promise<Response>;

@@ -1,4 +1,4 @@
-import { MiniflareError } from "@miniflare/shared";
+import { MiniflareError } from "@d1testflare/shared";
 
 export type DurableObjectErrorCode =
   | "ERR_SCRIPT_NOT_FOUND" // Missing mounted script for object

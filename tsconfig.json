@@ -20,14 +20,14 @@
     "checkJs": true,
     "allowJs": true,
     "paths": {
-      "miniflare": ["packages/miniflare/src"],
-      "@miniflare/*": ["packages/*/src"]
+      "d1testflare": ["packages/d1testflare/src"],
+      "@d1testflare/*": ["packages/*/src"]
     }
   },
   "include": [
     "packages/*/src/**/*.ts",
     "packages/*/test/**/*.ts",
-    "packages/miniflare/bootstrap.js",
+    "packages/d1testflare/bootstrap.js",
     "types"
   ],
   "exclude": [

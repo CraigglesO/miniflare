@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 import path from "path";
-import { LogLevel } from "@miniflare/shared";
-import { TestLog, useServer, useTmp } from "@miniflare/shared-test";
+import { LogLevel } from "@d1testflare/shared";
+import { TestLog, useServer, useTmp } from "@d1testflare/shared-test";
 import test from "ava";
-import { updateCheck } from "miniflare";
+import { updateCheck } from "../src";
 
 test("updateCheck: logs if updated version available", async (t) => {
   t.plan(5);

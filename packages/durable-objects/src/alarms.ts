@@ -1,5 +1,5 @@
 import assert from "assert";
-import { Storage, StorageFactory } from "@miniflare/shared";
+import { Storage, StorageFactory } from "@d1testflare/shared";
 
 export interface DurableObjectSetAlarmOptions {
   allowConcurrency?: boolean;

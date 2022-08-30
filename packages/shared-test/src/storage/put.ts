@@ -1,4 +1,4 @@
-import { StoredValueMeta } from "@miniflare/shared";
+import { StoredValueMeta } from "@d1testflare/shared";
 import { Macro } from "ava";
 import { utf8Decode, utf8Encode } from "../data";
 import {

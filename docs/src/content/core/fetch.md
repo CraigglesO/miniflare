@@ -33,7 +33,7 @@ has the same API as the regular `fetch` method: it either takes a `Request`
 object, or a URL and optional `RequestInit` object:
 
 ```js
-import { Miniflare, Request } from "miniflare";
+import { Miniflare, Request } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -69,7 +69,7 @@ You can use the `waitUntil` method of `Response` to get the data returned by all
 waited promises:
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `
@@ -127,7 +127,7 @@ upstream = "https://miniflare.dev"
 ```
 
 ```js
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 const mf = new Miniflare({
   script: `

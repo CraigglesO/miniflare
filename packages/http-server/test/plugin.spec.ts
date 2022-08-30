@@ -2,14 +2,14 @@ import assert from "assert";
 import { existsSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
-import { HTTPPlugin } from "@miniflare/http-server";
+import { HTTPPlugin } from "@d1testflare/http-server";
 import {
   Clock,
   Compatibility,
   LogLevel,
   NoOpLog,
   PluginContext,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TestLog,
   logPluginOptions,
@@ -17,7 +17,7 @@ import {
   parsePluginWranglerConfig,
   useServer,
   useTmp,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 const log = new NoOpLog();

@@ -3,8 +3,8 @@ import {
   RequestInit,
   Response,
   createCompatFetch,
-} from "@miniflare/core";
-import { Plugin, PluginContext, SetupResult } from "@miniflare/shared";
+} from "@d1testflare/core";
+import { Plugin, PluginContext, SetupResult } from "@d1testflare/shared";
 import { upgradingFetch } from "./fetch";
 import {
   CloseEvent,

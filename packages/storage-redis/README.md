@@ -1,4 +1,4 @@
-# `@miniflare/storage-redis`
+# `@d1testflare/storage-redis`
 
 Redis storage module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers.
@@ -6,8 +6,8 @@ fun, full-featured, fully-local simulator for Cloudflare Workers.
 ## Example
 
 ```js
-import { KVNamespace } from "@miniflare/kv";
-import { RedisStorage } from "@miniflare/storage-redis";
+import { KVNamespace } from "@d1testflare/kv";
+import { RedisStorage } from "@d1testflare/storage-redis";
 import IORedis from "ioredis";
 
 const redis = new IORedis("redis://localhost:6379");

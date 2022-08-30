@@ -1,4 +1,4 @@
-import { assertInRequest } from "@miniflare/shared";
+import { assertInRequest } from "@d1testflare/shared";
 
 export function isBufferSource(chunk: unknown): chunk is BufferSource {
   return chunk instanceof ArrayBuffer || ArrayBuffer.isView(chunk);

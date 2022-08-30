@@ -7,7 +7,7 @@ import {
   TypedEventListener,
   ValueOf,
   prefixError,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { Response as BaseResponse } from "undici";
 import { DOMException } from "./domexception";
 import { Request, Response, fetch, withWaitUntil } from "./http";

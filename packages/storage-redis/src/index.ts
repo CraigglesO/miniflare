@@ -13,8 +13,8 @@ import {
   StoredValueMeta,
   millisToSeconds,
   viewToArray,
-} from "@miniflare/shared";
-import { listFilterMatch, listPaginate } from "@miniflare/storage-memory";
+} from "@d1testflare/shared";
+import { listFilterMatch, listPaginate } from "@d1testflare/storage-memory";
 import { Commands, Pipeline } from "ioredis";
 
 /** @internal */

@@ -1,12 +1,12 @@
 import path from "path";
-import { CachedMeta } from "@miniflare/cache";
-import { PluginStorageFactory } from "@miniflare/core";
-import { StoredValueMeta } from "@miniflare/shared";
+import { CachedMeta } from "@d1testflare/cache";
+import { PluginStorageFactory } from "@d1testflare/core";
+import { StoredValueMeta } from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   utf8Decode,
   utf8Encode,
-} from "@miniflare/shared-test";
+} from "@d1testflare/shared-test";
 import test from "ava";
 
 test("PluginStorageFactory: namespaces memory storage", async (t) => {

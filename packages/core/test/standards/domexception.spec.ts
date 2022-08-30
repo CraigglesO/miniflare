@@ -1,4 +1,4 @@
-import { DOMException } from "@miniflare/core";
+import { DOMException } from "@d1testflare/core";
 import test from "ava";
 
 test('DOMException: name defaults to "Error"', (t) => {

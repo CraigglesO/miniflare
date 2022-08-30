@@ -6,7 +6,7 @@ import {
   KVNamespace,
   KVPutOptions,
   KVPutValueType,
-} from "@miniflare/kv";
+} from "@d1testflare/kv";
 import {
   EXTERNAL_SUBREQUEST_LIMIT_BUNDLED,
   RequestContext,
@@ -15,7 +15,7 @@ import {
   StoredKeyMeta,
   StoredValueMeta,
   base64Encode,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TIME_EXPIRED,
   TIME_EXPIRING,
@@ -27,8 +27,8 @@ import {
   utf8Encode,
   waitsForInputGate,
   waitsForOutputGate,
-} from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import anyTest, { Macro, TestInterface, ThrowsExpectation } from "ava";
 
 const requestCtxOptions: RequestContextOptions = {

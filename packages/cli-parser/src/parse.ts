@@ -6,7 +6,7 @@ import {
   OptionType,
   Options,
   PluginSignatures,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import mri from "mri";
 import { argName } from "./helpers";
 

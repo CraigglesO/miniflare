@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 import StandardWebSocket from "ws";
 
 test("atob, btoa, AbortSignal", async () => {

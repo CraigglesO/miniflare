@@ -1,5 +1,5 @@
-import { DOMException } from "@miniflare/core";
-import { assertInRequest, waitForOpenInputGate } from "@miniflare/shared";
+import { DOMException } from "@d1testflare/core";
+import { assertInRequest, waitForOpenInputGate } from "@d1testflare/shared";
 
 export type TimerFunction<Return> = <Args extends any[]>(
   callback: (...args: Args) => void,

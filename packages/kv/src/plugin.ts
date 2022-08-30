@@ -7,7 +7,7 @@ import {
   SetupResult,
   StorageFactory,
   resolveStoragePersist,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { KVNamespace } from "./namespace";
 
 export interface KVOptions {

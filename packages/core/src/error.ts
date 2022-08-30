@@ -1,4 +1,4 @@
-import { MiniflareError } from "@miniflare/shared";
+import { MiniflareError } from "@d1testflare/shared";
 
 export type MiniflareCoreErrorCode =
   | "ERR_NO_SCRIPT" // No script specified but one was required

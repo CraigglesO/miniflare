@@ -3,7 +3,7 @@ import {
   OptionType,
   PluginSignatures,
   spaceCase,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import { bold, grey } from "kleur/colors";
 import { argName } from "./helpers";
 

@@ -57,7 +57,7 @@ const buildOptions = {
     // Make sure we're not bundling any packages we're building, we want to
     // test against the actual code we'll publish for instance
     "miniflare",
-    "@miniflare/*",
+    "@d1testflare/*",
     // Make sure all Jest packages aren't bundled
     "@jest/*",
     "jest*",

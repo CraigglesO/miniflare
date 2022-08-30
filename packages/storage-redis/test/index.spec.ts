@@ -4,14 +4,14 @@ import {
   StoredValueMeta,
   randomHex,
   sanitisePath,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   TIME_EXPIRED,
   TIME_EXPIRING,
   TestStorageFactory,
   storageMacros,
-} from "@miniflare/shared-test";
-import { RedisStorage, _bufferFromArray } from "@miniflare/storage-redis";
+} from "@d1testflare/shared-test";
+import { RedisStorage, _bufferFromArray } from "@d1testflare/storage-redis";
 import test, { ExecutionContext } from "ava";
 import IORedis from "ioredis";
 

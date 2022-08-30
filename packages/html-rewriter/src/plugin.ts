@@ -1,4 +1,4 @@
-import { Plugin, PluginContext, SetupResult } from "@miniflare/shared";
+import { Plugin, PluginContext, SetupResult } from "@d1testflare/shared";
 import { HTMLRewriter, withEnableEsiTags } from "./rewriter";
 
 const ESIHTMLRewriter = new Proxy(HTMLRewriter, {

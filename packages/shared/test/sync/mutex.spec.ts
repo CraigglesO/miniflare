@@ -1,5 +1,5 @@
 import { setTimeout } from "timers/promises";
-import { Mutex } from "@miniflare/shared";
+import { Mutex } from "@d1testflare/shared";
 import test from "ava";
 
 test("Mutex: runs closures exclusively", async (t) => {

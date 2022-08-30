@@ -1,4 +1,4 @@
-import { Awaitable, InputGate, OutputGate } from "@miniflare/shared";
+import { Awaitable, InputGate, OutputGate } from "@d1testflare/shared";
 import { ExecutionContext } from "ava";
 
 export function triggerPromise<T>(): [

@@ -1,5 +1,5 @@
 {
-  "name": "@miniflare/scheduler",
+  "name": "@d1testflare/scheduler",
   "version": "2.7.1",
   "description": "Scheduler module for Miniflare: a fun, full-featured, fully-local simulator for Cloudflare Workers",
   "keywords": [
@@ -35,11 +35,11 @@
     "extends": "../../package.json"
   },
   "dependencies": {
-    "@miniflare/core": "2.7.1",
-    "@miniflare/shared": "2.7.1",
+    "@d1testflare/core": "2.7.1",
+    "@d1testflare/shared": "2.7.1",
     "cron-schedule": "^3.0.4"
   },
   "devDependencies": {
-    "@miniflare/shared-test": "2.7.1"
+    "@d1testflare/shared-test": "2.7.1"
   }
 }

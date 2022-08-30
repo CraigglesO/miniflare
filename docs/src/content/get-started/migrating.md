@@ -125,14 +125,14 @@ See
 [📌 Durable Objects](/storage/durable-objects#using-a-class-exported-by-another-script)
 for more details.
 
-### Install the optional `@miniflare/storage-redis` package
+### Install the optional `@d1testflare/storage-redis` package
 
 Redis persistence support is no longer included by default. If you're persisting
 KV, Durable Objects or cached data in Redis, you must install the
-`@miniflare/storage-redis` optional peer dependency:
+`@d1testflare/storage-redis` optional peer dependency:
 
 ```sh
-$ npm install @miniflare/storage-redis -D
+$ npm install @d1testflare/storage-redis -D
 ```
 
 ## API Only Changes
@@ -158,7 +158,7 @@ this with a `LogLevel` to control how much information is logged to the console.
 Replace...
 
 ```js
-import { Miniflare, ConsoleLog } from "miniflare";
+import { Miniflare, ConsoleLog } from "d1testflare";
 const mf = new Miniflare({
   log: new ConsoleLog(true), // ❌
 });
@@ -167,7 +167,7 @@ const mf = new Miniflare({
 ...with...
 
 ```js
-import { Miniflare, Log, LogLevel } from "miniflare";
+import { Miniflare, Log, LogLevel } from "d1testflare";
 const mf = new Miniflare({
   log: new Log(LogLevel.DEBUG), // ✅
 });

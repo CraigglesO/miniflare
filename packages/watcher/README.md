@@ -1,4 +1,4 @@
-# `@miniflare/watcher`
+# `@d1testflare/watcher`
 
 File-system watcher module for
 [Miniflare](https://github.com/cloudflare/miniflare): a fun, full-featured,
@@ -7,7 +7,7 @@ fully-local simulator for Cloudflare Workers.
 ## Example
 
 ```js
-import { Watcher } from "@miniflare/watcher";
+import { Watcher } from "@d1testflare/watcher";
 
 const watcher = new Watcher((changedPath) => {
   console.log(changedPath); // Absolute path logged on create, change, delete

@@ -42,7 +42,7 @@ Create the following file containing our tests:
 filename: test/index.spec.js
 ---
 import test from "ava";
-import { Miniflare } from "miniflare";
+import { Miniflare } from "d1testflare";
 
 test.beforeEach((t) => {
   // Create a new Miniflare environment for each test

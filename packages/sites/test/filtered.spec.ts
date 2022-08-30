@@ -1,12 +1,12 @@
-import { InternalKVNamespaceOptions } from "@miniflare/kv";
-import { Storage } from "@miniflare/shared";
+import { InternalKVNamespaceOptions } from "@d1testflare/kv";
+import { Storage } from "@d1testflare/shared";
 import {
   getObjectProperties,
   testClock,
   utf8Encode,
-} from "@miniflare/shared-test";
-import { FilteredKVNamespace } from "@miniflare/sites";
-import { MemoryStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/shared-test";
+import { FilteredKVNamespace } from "@d1testflare/sites";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import anyTest, { TestInterface } from "ava";
 
 interface Context {

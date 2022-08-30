@@ -431,8 +431,8 @@ Miniflare 2 has been completely redesigned from version 1 with 3 primary design
 goals:
 
 1. 📚 **Modular:** Miniflare 2 splits Workers components (KV, Durable Objects,
-   etc.) into **separate packages** (`@miniflare/kv`,
-   `@miniflare/durable-objects`, etc.) that you can import separately for
+   etc.) into **separate packages** (`@d1testflare/kv`,
+   `@d1testflare/durable-objects`, etc.) that you can import separately for
    testing.
 2. ✨ **Lightweight:** Miniflare 1 included
    [122 third-party packages](http://npm.anvaka.com/#/view/2d/miniflare) with a
@@ -502,12 +502,12 @@ you're upgrading from version 1.
   });
   ```
 
-- Replaced the `ConsoleLog` class with the `Log` class from `@miniflare/shared`.
+- Replaced the `ConsoleLog` class with the `Log` class from `@d1testflare/shared`.
   You can construct this with a `LogLevel` to control how much information is
   logged to the console:
 
   ```js
-  import { Miniflare, Log, LogLevel } from "miniflare";
+  import { Miniflare, Log, LogLevel } from "d1testflare";
 
   const mf = new Miniflare({
     log: new Log(LogLevel.DEBUG),
@@ -555,7 +555,7 @@ you're upgrading from version 1.
   the configured `host` and `port`.
 - Redis support is no longer included by default. If you're persisting KV,
   Durable Objects or cached responses in Redis, you must install the
-  `@miniflare/storage-redis` optional peer dependency.
+  `@d1testflare/storage-redis` optional peer dependency.
 - Replaced how Miniflare sanitises file paths for file-system storage so
   namespace separators (`/`, `\`, `:` and `|`) now create new directories.
 - The result of `Miniflare#dispatchScheduled` will no longer include `undefined`
@@ -916,7 +916,7 @@ you're upgrading from version 1.
 
 - Split out the Node request to `Request` object conversion logic into a
   `convertNodeRequest(req, meta?)` function. You can import this from
-  `@miniflare/http-server`.
+  `@d1testflare/http-server`.
 - Only return a pretty-error page when the request `Accept` header includes
   `text/html`
 - Added a new `Miniflare#startServer(options?)` method that starts an HTTP
@@ -1166,7 +1166,7 @@ you're upgrading from version 1.
   ```js
   // Previous version
   import vm from "vm";
-  import { Miniflare } from "miniflare";
+  import { Miniflare } from "d1testflare";
 
   const mf1 = new Miniflare(
     new vm.Script(`addEventListener("fetch", (event) => { ... })`),
@@ -1177,7 +1177,7 @@ you're upgrading from version 1.
 
   ```js
   // New version
-  import { Miniflare } from "miniflare";
+  import { Miniflare } from "d1testflare";
 
   const mf1 = new Miniflare({
     script: `addEventListener("fetch", (event) => { ... })`,

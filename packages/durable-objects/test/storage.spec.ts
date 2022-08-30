@@ -8,7 +8,7 @@ import {
   DurableObjectListOptions,
   DurableObjectStorage,
   DurableObjectTransaction,
-} from "@miniflare/durable-objects";
+} from "@d1testflare/durable-objects";
 import {
   InputGate,
   OutputGate,
@@ -17,15 +17,15 @@ import {
   nonCircularClone,
   viewToArray,
   waitForOpenInputGate,
-} from "@miniflare/shared";
+} from "@d1testflare/shared";
 import {
   MemoryStorageFactory,
   RecorderStorage,
   getObjectProperties,
   triggerPromise,
   utf8Encode,
-} from "@miniflare/shared-test";
-import { MemoryStorage } from "@miniflare/storage-memory";
+} from "@d1testflare/shared-test";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 import anyTest, {
   ExecutionContext,
   Macro,

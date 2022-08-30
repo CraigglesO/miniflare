@@ -8,8 +8,8 @@ import {
   FixedLengthStream,
   Request,
   Response,
-} from "@miniflare/core";
-import { utf8Decode, utf8Encode } from "@miniflare/shared-test";
+} from "@d1testflare/core";
+import { utf8Decode, utf8Encode } from "@d1testflare/shared-test";
 import test, { Macro, ThrowsExpectation } from "ava";
 
 function chunkedStream(chunks: number[][]): ReadableStream<Uint8Array> {

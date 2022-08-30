@@ -1,4 +1,4 @@
-# `@miniflare/d1`
+# `@d1testflare/d1`
 
 Workers D1 module for [Miniflare](https://github.com/cloudflare/miniflare): a
 fun, full-featured, fully-local simulator for Cloudflare Workers. See
@@ -7,8 +7,8 @@ fun, full-featured, fully-local simulator for Cloudflare Workers. See
 ## Example
 
 ```js
-import { D1Database } from "@miniflare/d1";
-import { MemoryStorage } from "@miniflare/storage-memory";
+import { D1Database } from "@d1testflare/d1";
+import { MemoryStorage } from "@d1testflare/storage-memory";
 const db = new D1Database(new MemoryStorage());
 
 // D1Database only supports .fetch(), once D1 is out of beta the full API will be available here:
