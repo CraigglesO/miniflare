@@ -14,7 +14,6 @@ export interface D1Options {
   d1Databases?: string[];
   d1Persist?: boolean | string;
 }
-const D1_BETA_PREFIX = `__D1_BETA__`;
 
 export class D1Plugin extends Plugin<D1Options> implements D1Options {
   #cachedDatabases: { [key: string]: D1Database } = {};
@@ -57,17 +56,7 @@ export class D1Plugin extends Plugin<D1Options> implements D1Options {
   async setup(storageFactory: StorageFactory): Promise<SetupResult> {
     const bindings: Context = {};
     for (const dbName of this.d1Databases ?? []) {
-      if (dbName.startsWith(D1_BETA_PREFIX)) {
-        bindings[dbName] = await this.getDatabase(
-          storageFactory,
-          // Store it locally without the prefix
-          dbName.slice(D1_BETA_PREFIX.length)
-        );
-      } else {
-        console.warn(
-          `Not injecting D1 Database for '${dbName}' as this version of Miniflare only supports D1 beta bindings. Upgrade Wrangler and/or Miniflare and try again.`
-        );
-      }
+      bindings[dbName] = await this.getDatabase(storageFactory, dbName);
     }
     return { bindings };
   }
