@@ -116,4 +116,8 @@ export abstract class LocalStorage extends Storage {
     await Promise.all(deletePromises);
     return res;
   }
+
+  getSqliteDatabasePath(): string {
+    return ":memory:";
+  }
 }

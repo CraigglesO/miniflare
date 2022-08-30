@@ -26,6 +26,11 @@ export interface WranglerEnvironmentConfig {
   routes?: RouteType[]; // NOT inherited
   webpack_config?: string; // inherited
   vars?: Record<string, any>; // NOT inherited
+  d1_databases?: {
+    binding: string;
+    database_name: string;
+    database_id: string;
+  }[]; // NOT inherited
   kv_namespaces?: {
     binding: string;
     id?: string;
@@ -64,6 +69,7 @@ export interface WranglerEnvironmentConfig {
     upstream?: string;
     watch?: boolean;
     build_watch_dirs?: string[];
+    d1_persist?: boolean | string;
     kv_persist?: boolean | string;
     r2_persist?: boolean | string;
     cache?: boolean;

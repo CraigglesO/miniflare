@@ -1,4 +1,4 @@
-import { existsSync } from "fs";
+import { existsSync, mkdirSync } from "fs";
 import path from "path";
 import {
   MiniflareError,
@@ -102,6 +102,11 @@ export class FileStorage extends LocalStorage {
       if (e.code === "ENOTDIR") return;
       throw e;
     }
+  }
+
+  getSqliteDatabasePath(): string {
+    mkdirSync(path.dirname(this.root), { recursive: true });
+    return this.root + ".sqlite3";
   }
 
   async getRangeMaybeExpired<Meta = unknown>(

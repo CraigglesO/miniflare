@@ -117,6 +117,10 @@ export abstract class Storage {
     skipMetadata: true
   ): Awaitable<StorageListResult<StoredKey>>;
 
+  getSqliteDatabasePath(): string {
+    throw new Error("D1 not implemented for this Storage class");
+  }
+
   // Batch functions, default implementations may be overridden to optimise
 
   async hasMany(keys: string[]): Promise<number> {

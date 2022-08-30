@@ -8,6 +8,7 @@ import {
   MiniflareCore,
   MiniflareCoreOptions,
 } from "@miniflare/core";
+import { D1Database, D1Plugin } from "@miniflare/d1";
 import {
   DurableObjectId,
   DurableObjectNamespace,
@@ -46,6 +47,7 @@ export const PLUGINS = {
   BuildPlugin,
 
   // Storage
+  D1Plugin,
   KVPlugin,
   R2Plugin,
   DurableObjectsPlugin,
@@ -98,6 +100,12 @@ export class Miniflare extends MiniflareCore<Plugins> {
   async dispose(): Promise<void> {
     await super.dispose();
     await this.#storageFactory.dispose();
+  }
+
+  async getD1Database(database: string): Promise<D1Database> {
+    const plugin = (await this.getPlugins()).D1Plugin;
+    const storage = this.getPluginStorage("D1Plugin");
+    return plugin.getDatabase(storage, database);
   }
 
   async getKVNamespace(namespace: string): Promise<KVNamespace> {
